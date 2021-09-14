@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { AuthComponent } from './login/auth/auth.component';
 import { RegisterComponent } from './login/register/register.component';
 import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
+import { TutorComponent } from './tutor/tutor.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { ForgotPasswordComponent } from './login/forgot-password/forgot-password
     AuthComponent,
     RegisterComponent,
     ForgotPasswordComponent,
+    TutorComponent,
+    StudentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
