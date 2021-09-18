@@ -1,12 +1,15 @@
-<a routerLink="/register-student">
-  <section class="register">
-    <div class="form-wrapper">
+<section class="register">
+    <div class="form-students-wrapper">
       <form>
         <input type="text" name="first-name" id="first-name" class="form-input" placeholder="Имя">
         <input type="text" name="second-name" id="second-name" class="form-input" placeholder="Фамилия">
         <input type="email" name="email" id="email" class="form-input" placeholder="e-mail">
         <input type="password" name="pass" id="pass" class="form-input" placeholder="Пароль (8-16 символов)">
         <input type="password" name="confirm-pass" id="confirm-pass" class="form-input" placeholder="Подтверждение пароля">
+        <select name="select_teacher" class="form-select" placeholder="Выбрать преподавателя">
+            <option>Фамилия Имя</option>
+            <option>Фамилия Имя</option>
+          </select>
         <button>создать профиль</button>
       </form>
     </div>
