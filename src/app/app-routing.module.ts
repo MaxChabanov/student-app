@@ -13,7 +13,6 @@ const routes: Routes = [
   { path: 'auth', component: AuthComponent },
   { path: 'tutor', component: TutorComponent },
   { path: 'student', component: StudentComponent },
-  // { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({
