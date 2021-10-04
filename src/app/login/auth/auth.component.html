@@ -1,3 +1,17 @@
-<a routerLink="/register"
-  >тут идет страница главная стр (можно посмотреть в фигме)</a
->
+<section class="auth">
+  <div class="toggle">
+    <div class="toggle__auth" id="teacher__auth">вход для преподавателей</div>
+    <div class="toggle__auth toggle_active" id="student__auth">вход для студентов</div>
+  </div>
+  <div class="form_wrapper student_active">
+    <form>
+      <input type="text" name="login" id="student_login" class="form-input active" placeholder="login">
+      <input type="password" name="password" id="student_password" class="form-input active" placeholder="password">
+      <input type="text" name="login" id="teacher_login" class="form-input" placeholder="t-login">
+      <input type="password" name="password" id="teacher_password" class="form-input" placeholder="t-password">
+      <button class="auth-btn">Войти</button>
+      <a class="forgoten_pass" href="">Забыли пароль?</a>
+    </form>
+  </div>
+  <button class="registration-btn" routerLink="/register">Зарегестрироваться</button>
+</section>

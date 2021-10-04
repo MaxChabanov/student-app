@@ -1,0 +1,28 @@
+.form-select
+{
+    width: 709px;
+    height: 55px;
+    left: 383px;
+    top: 636px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #A4A4A4;
+    padding-left: 25px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
+}
+.form-select::after {
+    background: url("../../../assets/img/teacher_pick.png");
+    justify-self: end;
+}

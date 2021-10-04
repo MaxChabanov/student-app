@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { AuthComponent } from './login/auth/auth.component';
 import { RegisterComponent } from './login/register/register.component';
 import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
-import { RegisterStudentComponent } from './login/register-student/register-student.component';
 import { TutorComponent } from './tutor/tutor.component';
 import { StudentComponent } from './student/student.component';
+import { TeacherSelectorComponent } from './additional-components/teacher-selector/teacher-selector.component';
 
 @NgModule({
   declarations: [
@@ -16,9 +16,9 @@ import { StudentComponent } from './student/student.component';
     AuthComponent,
     RegisterComponent,
     ForgotPasswordComponent,
-    RegisterStudentComponent,
     TutorComponent,
     StudentComponent,
+    TeacherSelectorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
