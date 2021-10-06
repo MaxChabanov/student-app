@@ -1,5 +1,5 @@
 .auth {
-    padding: 223px 320px 201px 478px;
+    padding: 135px 320px 201px 478px;
     background: url("../../../assets/img/reg-bg.png") center center/cover no-repeat;
     margin: 0;
 }
@@ -32,11 +32,12 @@
     color: #FFFFFF;
     padding: 25px 0 0 30px;
     position: absolute;
+    cursor: pointer;
 }
 .toggle_active {
     background: #272727;
 }
-#student__auth {
+.left {
     margin-left: 271px;
     padding-left: 63px;
     width: 208px;
@@ -58,6 +59,10 @@ form {
     border-radius: 30px;
     display: block;
     margin-top: 27px;
+    cursor: pointer;
+}
+.auth-btn {
+    border: none;
 }
 .auth-btn:active {
     background: #0075FF;
@@ -84,6 +89,7 @@ form {
     color: #A4A4A4;
     padding: 0 28px;
     margin-bottom: 30px;
+    border: none;
 }
 .form-wrapper {
     width: 800px;
@@ -93,6 +99,7 @@ form {
     padding: 55px 77px 0;
     margin: 0 auto;
     position: relative;
+    cursor: default;
 }
 .forgoten_pass {
     margin: 16px 0 0 26px;
@@ -101,4 +108,13 @@ form {
     line-height: 16px;
     text-transform: lowercase;
     color: #FFFFFF;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+.forgoten_pass__underline {
+    width: 106px;
+    height: 0px;
+    margin-left: 26px;
+    background-color: #0075ff;
+    border: 1px solid #0075FF;
 }

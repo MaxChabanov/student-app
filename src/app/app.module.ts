@@ -8,7 +8,7 @@ import { RegisterComponent } from './login/register/register.component';
 import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
 import { TutorComponent } from './tutor/tutor.component';
 import { StudentComponent } from './student/student.component';
-import { TeacherSelectorComponent } from './additional-components/teacher-selector/teacher-selector.component';
+import { SelectorComponent } from './additional-components/selector/selector.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { TeacherSelectorComponent } from './additional-components/teacher-select
     ForgotPasswordComponent,
     TutorComponent,
     StudentComponent,
-    TeacherSelectorComponent,
+    SelectorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
