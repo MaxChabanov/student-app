@@ -1,75 +1,63 @@
-.register {
-    padding: 25px 320px 201px 320px;
+.registration {
+    padding: 30px 320px 201px 320px;
     background: url("../../../assets/img/reg-bg.png") center center/cover no-repeat;
     margin: 0;
 }
 .form-wrapper {
     width: 800px;
-    height: 600px;
-    left: 320px;
-    top: 221px;
     background: #F4F4F4;
     border-radius: 30px;
     padding: 55px 63px 0 63px;
     margin: 0 auto;
 }
-form {
+.registration-form {
     display: flex;
     flex-direction: column;
-}
-button {
-    width: 384px;
-    height: 50px;
-    left: 528px;
-    top: 708px;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    align-items: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #0075FF;
-    border-radius: 30px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 27px;
-    border: none;
-    cursor: pointer;
-}
-button:active {
-    background: #0075FF;
-    box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-}
-.form-input, .form-select
-{
-    height: 51px;
-    width: 674px;
-    left: 383px;
-    top: 600px;
-    border-radius: 30px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    color: #A4A4A4;
-    padding-left: 28px;
-    margin-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.form-wrapper {
-    width: 800px;
-    height: 600px;
-    left: 320px;
-    top: 221px;
-    background: #F4F4F4;
-    border-radius: 30px;
-    padding: 55px 63px 0 63px;
-    margin: 0 auto;
+    &__input {
+        height: 51px;
+        width: 674px;
+        border-radius: 30px;
+        border: 2px solid black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #A4A4A4;
+        padding-left: 28px;
+        display: block;
+        margin: 30px auto 0;
+        outline: none;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:active {
+            color: black;
+        }
+    }
+    &__button {
+        width: 384px;
+        height: 50px;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        align-items: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #0075FF;
+        border-radius: 30px;
+        display: block;
+        margin: 0 auto;
+        margin: 57px auto 54px;
+        border: none;
+        cursor: pointer;
+        &:active {
+            background: #0075FF;
+            box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+        }
+    }
 }

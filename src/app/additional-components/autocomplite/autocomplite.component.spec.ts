@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SelectorComponent } from './selector.component';
+import { AutocompliteComponent } from './autocomplite.component';
 
-describe('SelectorComponent', () => {
-  let component: SelectorComponent;
-  let fixture: ComponentFixture<SelectorComponent>;
+describe('AutocompliteComponent', () => {
+  let component: AutocompliteComponent;
+  let fixture: ComponentFixture<AutocompliteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SelectorComponent ]
+      declarations: [ AutocompliteComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SelectorComponent);
+    fixture = TestBed.createComponent(AutocompliteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
