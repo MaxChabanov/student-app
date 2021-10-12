@@ -1,6 +1,6 @@
 .registration {
     padding: 30px 320px 201px 320px;
-    background: url("../../../assets/img/reg-bg.png") center center/cover no-repeat;
+    background: url("/assets/img/reg-bg.png") center center/cover no-repeat;
     margin: 0;
 }
 .form-wrapper {
@@ -17,8 +17,9 @@
         height: 51px;
         width: 674px;
         border-radius: 30px;
-        border: 2px solid black;
-        font-family: Roboto;
+        border: none;
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -40,7 +41,7 @@
     &__button {
         width: 384px;
         height: 50px;
-        font-family: Roboto;
+        font-family: 'Roboto Bold';
         font-weight: bold;
         font-size: 18px;
         line-height: 21px;
