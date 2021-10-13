@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RegisterStudentComponent } from './register-student.component';
+import { AutocompliteComponent } from './autocomplite.component';
 
-describe('RegisterStudentComponent', () => {
-  let component: RegisterStudentComponent;
-  let fixture: ComponentFixture<RegisterStudentComponent>;
+describe('AutocompliteComponent', () => {
+  let component: AutocompliteComponent;
+  let fixture: ComponentFixture<AutocompliteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RegisterStudentComponent ]
+      declarations: [ AutocompliteComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RegisterStudentComponent);
+    fixture = TestBed.createComponent(AutocompliteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
