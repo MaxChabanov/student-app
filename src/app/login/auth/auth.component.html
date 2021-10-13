@@ -1,16 +1,18 @@
 <section class="authentification">
+<div class="some">
   <div class="toggle">
     <div class="toggle__button">вход для преподавателей</div>
     <div class="toggle__button toggle__button_left toggle__button_active">вход для студентов</div>
   </div>
   <div class="form_wrapper">
-    <form class="authentification-form">
-      <input type="text" name="login" class="authentification-form__input" placeholder="login">
-      <input type="password" name="password" class="authentification-form__input" placeholder="password">
-      <button class="authentification-form__btn">Войти</button>
-      <a class="authentification-form__forgoten_pass" routerLink="/forgot_password">Забыли пароль?</a>
-      <hr class="authentification-form__forgoten_pass-underline">
+    <form class="auth-form">
+      <input type="text" name="login" class="auth-form__input" placeholder="login">
+      <input type="password" name="password" class="auth-form__input" placeholder="password">
+      <button class="auth-form__btn">Войти</button>
+      <a class="forgoten_pass" routerLink="/forgot_password">Забыли пароль?</a>
+      <hr class="forgoten_pass-underline">
     </form>
   </div>
-  <button class="registration-btn" routerLink="/register">Зарегестрироваться</button>
+  <button class="reg-btn" routerLink="/register">Зарегестрироваться</button>
+</div>  
 </section>

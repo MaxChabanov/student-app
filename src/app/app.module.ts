@@ -10,7 +10,7 @@ import { RegisterComponent } from './login/register/register.component';
 import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
 import { TutorComponent } from './tutor/tutor.component';
 import { StudentComponent } from './student/student.component';
-import { AutocompliteComponent } from './shared-components/autocomplite/autocomplite.component';
+import { AutocompliteComponent } from './shared/autocomplite/autocomplite.component';
 
 @NgModule({
   declarations: [
