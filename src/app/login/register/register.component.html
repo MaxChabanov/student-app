@@ -1,14 +1,41 @@
 <section class="registration">
   <div class="form-wrapper">
     <form class="registration-form">
-      <input type="text" name="first-name" class="registration-form__input" placeholder="Имя">
-      <input type="text" name="second-name" class="registration-form__input" placeholder="Фамилия">
-      <input type="email" name="email" class="registration-form__input" placeholder="e-mail">
-      <input type="password" name="pass" class="registration-form__input" placeholder="Пароль (8-16 символов)">
-      <input type="password" name="confirm-pass" class="registration-form__input" placeholder="Подтверждение пароля">
+      <input
+        type="text"
+        name="first-name"
+        class="registration-form__input"
+        placeholder="Имя"
+      />
+      <input
+        type="text"
+        name="second-name"
+        class="registration-form__input"
+        placeholder="Фамилия"
+      />
+      <input
+        type="email"
+        name="email"
+        class="registration-form__input"
+        placeholder="e-mail"
+      />
+      <input
+        type="password"
+        name="pass"
+        class="registration-form__input"
+        placeholder="Пароль (8-16 символов)"
+      />
+      <input
+        type="password"
+        name="confirm-pass"
+        class="registration-form__input"
+        placeholder="Подтверждение пароля"
+      />
       <app-autocomplite></app-autocomplite>
-      
-      <button class="registration-form__button">создать профиль</button>
+
+      <button class="registration-form__button" routerLink="/student">
+        создать профиль
+      </button>
     </form>
   </div>
 </section>
