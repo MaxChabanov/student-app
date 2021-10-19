@@ -17,8 +17,11 @@ input {
     margin: 30px auto 0;
     outline: none;
 }
-option {
+select {
     font-family: 'Roboto';
+    color:aqua;
+    height: 51px;
+    width: 674px;
 }
 .form-select::after {
     background: url("/assets/img/double_pick.png");
