@@ -6,6 +6,7 @@ import { TutorComponent } from './tutor/tutor.component';
 import { StudentComponent } from './student/student.component';
 
 import { StudentTutorGuard } from './guards/student-tutor.guard';
+import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
 
 const routes: Routes = [
   { path: '', component: AuthComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
     component: StudentComponent,
     canActivate: [StudentTutorGuard],
   },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
   // { path: '**', component: NotFoundComponent },
 ];
 
