@@ -1,43 +1,39 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { map, startWith } from 'rxjs/operators';
+
+export interface User {
+  name: string;
+}
 
 @Component({
   selector: 'app-autocomplite',
   templateUrl: './autocomplite.component.html',
-  styleUrls: ['./autocomplite.component.scss']
+  styleUrls: ['./autocomplite.component.scss'],
 })
-export class AutocompliteComponent implements OnInit {
+export class AutocompleteDisplayExample implements OnInit {
+  myControl = new FormControl();
+  options: User[] = [{ name: 'Mary' }, { name: 'Shelley' }, { name: 'Igor' }];
+  filteredOptions: Observable<User[]>;
 
-  constructor() { }
+  ngOnInit() {
+    this.filteredOptions = this.myControl.valueChanges.pipe(
+      startWith(''),
+      map((value) => (typeof value === 'string' ? value : value.name)),
+      map((name) => (name ? this._filter(name) : this.options.slice()))
+    );
+  }
 
-  countrylist: any = [];
-    selected: string = "";
+  displayFn(user: User): string {
+    return user && user.name ? user.name : '';
+  }
 
-    ngOnInit(): void {
-        this.countrylist = [
-            { "name": "Afghanistan", "code": "AF" },
-            { "name": "Åland Islands", "code": "AX" },
-            { "name": "Albania", "code": "AL" },
-            { "name": "Algeria", "code": "DZ" },
-            { "name": "American Samoa", "code": "AS" },
-            { "name": "AndorrA", "code": "AD" },
-            { "name": "Angola", "code": "AO" },
-            { "name": "Anguilla", "code": "AI" },
-            { "name": "Antarctica", "code": "AQ" },
-            { "name": "Antigua and Barbuda", "code": "AG" },
-            { "name": "Argentina", "code": "AR" },
-            { "name": "Armenia", "code": "AM" },
-            { "name": "Aruba", "code": "AW" },
-            { "name": "Australia", "code": "AU" },
-            { "name": "Austria", "code": "AT" },
-            { "name": "Azerbaijan", "code": "AZ" },
-            { "name": "Bahamas", "code": "BS" },
-            { "name": "Bahrain", "code": "BH" },
-            { "name": "Bangladesh", "code": "BD" },
-            { "name": "Barbados", "code": "BB" }
-        ]
-    }
-    selectCountryName(name: string) {
-        console.log(name);
-        console.log(this.selected);
-    }
+  private _filter(name: string): User[] {
+    const filterValue = name.toLowerCase();
+
+    return this.options.filter((option) =>
+      option.name.toLowerCase().includes(filterValue)
+    );
+  }
 }

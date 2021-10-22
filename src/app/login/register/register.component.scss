@@ -1,7 +1,6 @@
 .registration {
     padding: 30px 320px 201px 320px;
     background: url("/assets/img/reg-bg.png") no-repeat center center/cover;
-    height: 68vh;
 }
 .form-wrapper {
     width: 800px;
@@ -26,7 +25,7 @@
         line-height: 16px;
         display: flex;
         align-items: center;
-        color: #A4A4A4;
+        color: #000000;
         padding-left: 28px;
         display: block;
         margin: 30px auto 0;
@@ -34,8 +33,20 @@
         &:first-child {
             margin-top: 0;
         }
-        &:active {
-            color: black;
+        &::-webkit-input-placeholder {
+            color: #A4A4A4;
+        }
+        &::-moz-placeholder {
+            color: #A4A4A4;
+        }
+        &::-ms-input-placeholder {
+            color: #A4A4A4;
+        }
+        &::-moz-placeholder { 
+            color: #A4A4A4;
+        }
+        &::placeholder { 
+            color: #A4A4A4;
         }
     }
     &__button {
