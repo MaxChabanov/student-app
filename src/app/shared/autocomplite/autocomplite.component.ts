@@ -1,39 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import { Observable } from 'rxjs';
-import { map, startWith } from 'rxjs/operators';
-
-export interface User {
-  name: string;
-}
 
 @Component({
   selector: 'app-autocomplite',
   templateUrl: './autocomplite.component.html',
   styleUrls: ['./autocomplite.component.scss'],
 })
-export class AutocompleteDisplayExample implements OnInit {
-  myControl = new FormControl();
-  options: User[] = [{ name: 'Mary' }, { name: 'Shelley' }, { name: 'Igor' }];
-  filteredOptions: Observable<User[]>;
+export class AutocompliteComponent implements OnInit {
+  constructor() {}
 
-  ngOnInit() {
-    this.filteredOptions = this.myControl.valueChanges.pipe(
-      startWith(''),
-      map((value) => (typeof value === 'string' ? value : value.name)),
-      map((name) => (name ? this._filter(name) : this.options.slice()))
-    );
+  showDropDown = false;
+  toggleDropDown() {
+    this.showDropDown = !this.showDropDown;
   }
+  teachers: any = ['Вася', 'Петя', 'Стас', 'Валера'];
 
-  displayFn(user: User): string {
-    return user && user.name ? user.name : '';
-  }
-
-  private _filter(name: string): User[] {
-    const filterValue = name.toLowerCase();
-
-    return this.options.filter((option) =>
-      option.name.toLowerCase().includes(filterValue)
-    );
-  }
+  ngOnInit(): void {}
 }

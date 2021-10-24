@@ -1,29 +1,73 @@
-input {
-    height: 51px;
+.teachers {
+  &-input {
     width: 674px;
+    margin-left: 48px;
+    margin-top: 30px !important;
+    height: 51px;
+    background: white !important;
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
+    outline: none;
     border: none;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
-    color: #A4A4A4;
+    color: #000000;
     padding-left: 28px;
-    display: block;
-    margin: 30px auto 0;
-    outline: none;
+    background: url("../../../assets/img/double_pick.png") no-repeat;
+    background-position: 95% 50%;
+    &:first-child {
+      margin-top: 0;
+    }
+    &::-webkit-input-placeholder {
+      color: #a4a4a4;
+    }
+    &::-moz-placeholder {
+      color: #a4a4a4;
+    }
+    &::-ms-input-placeholder {
+      color: #a4a4a4;
+    }
+    &::-moz-placeholder {
+      color: #a4a4a4;
+    }
+    &::placeholder {
+      color: #a4a4a4;
+    }
+  }
+  &-dropdown {
+    position: absolute;
+    z-index: 1;
+    border-top: none;
+    background-color: #ffffff;
+    overflow-y: hidden;
+    border-radius: 0 0 30px 30px;
+    margin-left: 48px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+  }
 }
-select {
-    font-family: 'Roboto';
-    color:aqua;
-    height: 51px;
-    width: 674px;
+.teacher {
+  padding: 10px;
+  width: 653px;
+  height: 16px;
+  margin-top: 12px;
+  margin-left: 29px;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  &:first-child::before {
+    width: 641px;
+    height: 0px;
+    border: 1px solid #a4a4a4;
+  }
+  &:last-child {
+    margin-bottom: 20px;
+  }
+  &:hover {
+    background-color: rgb(228, 228, 228);
+  }
 }
-.form-select::after {
-    background: url("/assets/img/double_pick.png");
-    justify-self: end;
+.active {
+  border-radius: 30px 30px 0 0;
+  box-shadow: 2px 3px 0px rgba(0, 0, 0, 0.25);
+  border-bottom: none;
 }

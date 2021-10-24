@@ -1,27 +1,16 @@
-<!-- <div class="typeHead">
-    <input type="text" list="countries" name="country" [(ngModel)]='selected' (change)="selectCountryName(selected)" />
-    <datalist id="countries">
-        <select>
-            <option *ngFor="let c of countrylist" [value]="c.name"></option>
-        </select>
-    </datalist>
-</div> -->
-<form class="example-form">
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Assignee</mat-label>
-    <input
-      type="text"
-      matInput
-      [formControl]="myControl"
-      [matAutocomplete]="auto"
-    />
-    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
-      <mat-option
-        *ngFor="let option of filteredOptions | async"
-        [value]="option"
-      >
-        {{ option.name }}
-      </mat-option>
-    </mat-autocomplete>
-  </mat-form-field>
-</form>
+<input
+  type="text"
+  name="teachers"
+  class="teachers-input"
+  (click)="toggleDropDown()"
+  placeholder="Выбрать преподавателя"
+/>
+<div
+  class="teachers-dropdown"
+  *ngIf="showDropDown"
+  (clickOutside)="toggleDropDown()"
+>
+  <div class="teacher" *ngFor="let teacher of teachers">
+    {{ teacher }}
+  </div>
+</div>

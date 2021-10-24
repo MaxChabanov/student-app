@@ -10,10 +10,6 @@ import { ForgotPasswordComponent } from './login/forgot-password/forgot-password
 import { TutorComponent } from './tutor/tutor.component';
 import { StudentComponent } from './student/student.component';
 import { AutocompliteComponent } from './shared/autocomplite/autocomplite.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { FormControl } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,15 +21,7 @@ import { FormControl } from '@angular/forms';
     StudentComponent,
     AutocompliteComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatAutocompleteModule,
-    FormControl,
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

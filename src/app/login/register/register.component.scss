@@ -1,75 +1,75 @@
 .registration {
-    padding: 30px 320px 201px 320px;
-    background: url("/assets/img/reg-bg.png") no-repeat center center/cover;
+  padding: 30px 320px 126px 231px;
+  background: url("/assets/img/reg-bg.png") no-repeat center center/cover;
 }
 .form-wrapper {
-    width: 800px;
-    background: #F4F4F4;
-    border-radius: 30px;
-    padding: 55px 63px 0 63px;
-    margin: 0 auto;
+  width: 800px;
+  background: #f4f4f4;
+  border-radius: 30px;
+  padding: 55px 63px 0 63px;
+  margin: 0 auto;
 }
 .registration-form {
+  display: flex;
+  flex-direction: column;
+  &__input {
+    height: 51px;
+    width: 674px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
     display: flex;
-    flex-direction: column;
-    &__input {
-        height: 51px;
-        width: 674px;
-        border-radius: 30px;
-        border: none;
-        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        color: #000000;
-        padding-left: 28px;
-        display: block;
-        margin: 30px auto 0;
-        outline: none;
-        &:first-child {
-            margin-top: 0;
-        }
-        &::-webkit-input-placeholder {
-            color: #A4A4A4;
-        }
-        &::-moz-placeholder {
-            color: #A4A4A4;
-        }
-        &::-ms-input-placeholder {
-            color: #A4A4A4;
-        }
-        &::-moz-placeholder { 
-            color: #A4A4A4;
-        }
-        &::placeholder { 
-            color: #A4A4A4;
-        }
+    align-items: center;
+    color: #000000;
+    padding-left: 28px;
+    display: block;
+    margin: 30px auto 0;
+    outline: none;
+    &:first-child {
+      margin-top: 0;
     }
-    &__button {
-        width: 384px;
-        height: 50px;
-        font-family: 'Roboto Bold';
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 21px;
-        align-items: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        background: #0075FF;
-        border-radius: 30px;
-        display: block;
-        margin: 0 auto;
-        margin: 57px auto 54px;
-        border: none;
-        cursor: pointer;
-        &:active {
-            background: #0075FF;
-            box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.25);
-            border-radius: 30px;
-        }
+    &::-webkit-input-placeholder {
+      color: #a4a4a4;
     }
+    &::-moz-placeholder {
+      color: #a4a4a4;
+    }
+    &::-ms-input-placeholder {
+      color: #a4a4a4;
+    }
+    &::-moz-placeholder {
+      color: #a4a4a4;
+    }
+    &::placeholder {
+      color: #a4a4a4;
+    }
+  }
+  &__button {
+    width: 384px;
+    height: 50px;
+    font-family: "Roboto Bold";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #0075ff;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    margin: 57px auto 54px;
+    border: none;
+    cursor: pointer;
+    &:active {
+      background: #0075ff;
+      box-shadow: inset 2px 3px 6px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+    }
+  }
 }
