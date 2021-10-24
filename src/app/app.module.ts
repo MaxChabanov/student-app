@@ -9,7 +9,16 @@ import { RegisterComponent } from './login/register/register.component';
 import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
 import { TutorComponent } from './tutor/tutor.component';
 import { StudentComponent } from './student/student.component';
-import { AutocompliteComponent } from './shared/autocomplite/autocomplite.component';
+import { AutocompleteComponent } from './shared/autocomplete/autocomplete.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Forms
+import { ReactiveFormsModule } from '@angular/forms';
+
+// Material
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -19,9 +28,18 @@ import { AutocompliteComponent } from './shared/autocomplite/autocomplite.compon
     ForgotPasswordComponent,
     TutorComponent,
     StudentComponent,
-    AutocompliteComponent,
+    AutocompleteComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
