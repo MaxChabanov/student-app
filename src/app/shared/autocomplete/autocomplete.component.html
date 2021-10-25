@@ -1,8 +1,11 @@
 <form class="example-form">
-  <mat-form-field class="example-full-width" appearance="fill">
+  <mat-form-field class="example-full-width">
     <mat-label>Выберите учителя</mat-label>
     <input
+      #someVar
+      (input)="inputClick()"
       type="text"
+      class="input"
       placeholder="Учитель"
       aria-label="Number"
       matInput

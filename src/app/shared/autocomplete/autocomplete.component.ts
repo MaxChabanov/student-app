@@ -30,4 +30,12 @@ export class AutocompleteComponent implements OnInit {
       option.toLowerCase().includes(filterValue)
     );
   }
+  inputClick = function () {
+    let dropdown: any = document.getElementsByClassName('cdk-overlay-pane');
+    console.dir(dropdown);
+    if (dropdown) {
+      let dropdownDisplay = dropdown[0].style.display;
+      console.log(dropdownDisplay);
+    }
+  };
 }
