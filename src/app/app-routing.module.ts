@@ -20,7 +20,7 @@ const routes: Routes = [
   {
     path: 'student',
     component: StudentComponent,
-    canActivate: [StudentTutorGuard],
+    /*canActivate: [StudentTutorGuard],*/
   },
   { path: 'forgot-password', component: ForgotPasswordComponent },
   // { path: '**', component: NotFoundComponent },
