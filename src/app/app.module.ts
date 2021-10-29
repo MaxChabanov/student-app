@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { CalendarComponent } from './shared/calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MatInputModule } from '@angular/material/input';
     TutorComponent,
     StudentComponent,
     AutocompleteComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,
