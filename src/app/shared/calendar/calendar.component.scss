@@ -40,6 +40,16 @@ img {
   overflow-y: auto;
   margin-top: 61px;
 }
+.scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll::-webkit-scrollbar-track {
+  border-radius: 50px;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background: #c6c6c6;
+  border-radius: 50px;
+}
 td {
   border: 1px solid #a4a4a4;
 }
