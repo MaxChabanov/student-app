@@ -16,6 +16,21 @@ hr {
 select {
   margin-left: 518px;
   margin-right: 70px;
+  width: 89px;
+  height: 32px;
+  appearance: none;
+  background: #ffffff;
+  border: 1px solid #0075ff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-image: url("/assets/icons/select-pick.svg") no-repeat;
+  background-position: 100% 100%;
+}
+option * {
+  margin-top: 5px;
+  border-radius: 5px;
 }
 img {
   margin-top: 26px;
@@ -67,7 +82,7 @@ td {
 .active {
   background-color: #c7e0fa;
 }
-.weekend {
+.disabled {
   background-color: #f4f4f4;
 }
 .lt {
