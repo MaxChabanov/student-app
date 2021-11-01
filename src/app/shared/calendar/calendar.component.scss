@@ -85,42 +85,42 @@ td {
 .disabled {
   background-color: #f4f4f4;
 }
-.lt {
+.border-left-top {
   border-top: none;
   border-left: none;
   width: 15px;
   height: 15px;
 }
-.l {
+.border-left {
   border-left: none;
   width: 15px;
 }
-.lb {
+.border-left-bottom {
   border-bottom: none;
   border-left: none;
   width: 15px;
   height: 15px;
 }
-.tl {
+.border-top-left {
   border-top: none;
   border-left: none;
   height: 15px;
   width: 15px;
 }
-.t {
+.border-top {
   border-top: none;
   height: 15px;
 }
-.tr {
+.border-top-right {
   border-top: none;
   border-right: none;
   height: 15px;
   width: 15px;
 }
-.r {
+.border-right {
   border-right: none;
 }
-.bn {
+.border-none {
   border: none;
 }
 .date {
@@ -134,4 +134,41 @@ td {
   color: #a4a4a4;
   margin-bottom: 3px;
   margin-left: 9px;
+}
+.open-slot {
+  width: 160px;
+  height: 117px;
+  background: #ffffff;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding-top: 19px;
+  &__title {
+    font-family: "Roboto Bold";
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 20px 25px;
+    margin-top: 0;
+  }
+  &__label {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    display: block;
+    cursor: pointer;
+    margin-top: 17px;
+  }
+}
+.open-slot__label input[type="checkbox"] {
+  position: absolute;
+  display: block;
+  margin: 0 12px 0 21px;
+}
+.open-slot__label span {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 43px;
 }
