@@ -3,10 +3,12 @@
   <div class="calend__control">
     <h1 class="month-year">Сентябрь</h1>
     <img src="/assets/icons/calendar.svg" alt="" />
-    <select>
-      <option>день</option>
-      <option>неделя</option>
-    </select>
+    <mat-form-field appearance="fill">
+      <mat-select value="неделя">
+        <mat-option value="день">день</mat-option>
+        <mat-option value="неделя">неделя</mat-option>
+      </mat-select>
+    </mat-form-field>
     <button class="left"><</button>
     <button class="right">></button>
   </div>

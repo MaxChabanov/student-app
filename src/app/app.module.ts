@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { CalendarComponent } from './shared/calendar/calendar.component';
 
 @NgModule({
@@ -40,6 +41,7 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
     MatAutocompleteModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    MatSelectModule,
     MatInputModule,
   ],
   providers: [],
