@@ -1,53 +1,59 @@
 .calend {
   margin-left: 260px;
+  &__control {
+    width: 67%;
+    margin-left: 40px;
+    padding-top: 26px;
+    height: 86px;
+  }
 }
 hr {
   background-color: #a4a4a4;
   height: 1px;
-  width: 80%;
+  width: 73%;
 }
 .month-year {
   color: #0075ff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   display: inline-block;
-  margin: 26px 24px 29px 40px;
+  margin-right: 24px;
   font-family: "Roboto Bold";
 }
-select {
-  margin-left: 518px;
-  margin-right: 70px;
-  width: 89px;
-  height: 32px;
-  appearance: none;
-  background: #ffffff;
-  border: 1px solid #0075ff;
-  box-sizing: border-box;
-  border-radius: 5px;
-  outline: none;
+
+.mini-calendar {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
-  background-image: url("/assets/icons/select-pick.svg") no-repeat;
-  background-position: 100% 100%;
+  border: none;
+  background: url("/assets/icons/calendar.svg") 50% 50% no-repeat;
+  outline: none;
 }
-option * {
-  margin-top: 5px;
-  border-radius: 5px;
-}
-img {
-  margin-top: 26px;
-}
-.left,
-.right {
+.left-btn,
+.right-btn {
   background: none;
   border: none;
-  font-family: "Roboto Bold";
-  font-size: 14px;
-  color: #0075ff;
+  width: 30px;
+  height: 32px;
+  cursor: pointer;
+  background: url("/assets/icons/select-pick.svg") 50% 50% no-repeat;
 }
-.left {
-  margin-left: 45px;
+.left-btn {
+  margin-left: 75px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-left: 131px;
 }
-.right {
-  margin-left: 10px;
+.right-btn {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+  margin-left: 1px;
 }
 .scroll {
   max-height: 931px;
@@ -68,9 +74,12 @@ img {
 td {
   border: 1px solid #a4a4a4;
 }
+.cell {
+  cursor: pointer;
+}
 .cell tr td {
-  width: 139px;
-  height: 30px;
+  width: 127px;
+  height: 28px;
   opacity: 0.6;
   border-right: none;
   border-left: none;
@@ -94,10 +103,14 @@ td {
 .border-left {
   border-left: none;
   width: 15px;
+  vertical-align: top;
+  padding-right: 2px;
 }
 .border-left-bottom {
   border-bottom: none;
   border-left: none;
+  vertical-align: top;
+  padding-right: 2px;
   width: 15px;
   height: 15px;
 }
@@ -120,12 +133,15 @@ td {
 .border-right {
   border-right: none;
 }
+.border-bottom {
+  border-bottom: none;
+}
 .border-none {
   border: none;
 }
 .date {
   font-family: "Roboto Bold";
-  font-size: 30px;
+  font-size: 27px;
   margin-left: 10px;
 }
 .dayw {
@@ -173,7 +189,7 @@ td {
   padding: 0 0 0 43px;
 }
 
-//select redisign
+//select redesign
 ::placeholder {
   color: white;
 }
@@ -193,7 +209,7 @@ td {
   box-sizing: border-box;
   border: 1px solid #0075ff;
   background-color: #ffffff;
-  margin-left: 300px;
+  margin-left: 398px;
 }
 ::ng-deep
   .mat-form-field-type-mat-select:not(.mat-form-field-disabled)

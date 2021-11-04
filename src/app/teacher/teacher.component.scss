@@ -30,7 +30,7 @@
 .description {
   padding: 84px 260px 0 260px;
 }
-.student-form {
+.teacher-form {
   &__row {
     display: flex;
     flex-direction: row;
@@ -189,6 +189,45 @@
   font-size: 36px;
   line-height: 42px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   color: #272727;
+}
+
+.open-slot {
+  width: 160px;
+  height: 117px;
+  background: #ffffff;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding-top: 19px;
+  &__title {
+    font-family: "Roboto Bold";
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 20px 25px;
+    margin-top: 0;
+  }
+  &__label {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    display: block;
+    cursor: pointer;
+    margin-top: 17px;
+  }
+}
+.open-slot__label input[type="checkbox"] {
+  position: absolute;
+  display: block;
+  margin: 0 12px 0 21px;
+}
+.open-slot__label span {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 43px;
 }

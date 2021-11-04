@@ -21,6 +21,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { CalendarComponent } from './shared/calendar/calendar.component';
+import { TeacherComponent } from './teacher/teacher.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
     StudentComponent,
     AutocompleteComponent,
     CalendarComponent,
+    TeacherComponent,
   ],
   imports: [
     BrowserModule,

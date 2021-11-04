@@ -1,5 +1,5 @@
 <header class="header">
-  <h1 class="header__title">профиль студента</h1>
+  <h1 class="header__title">профиль преподавателя</h1>
   <div class="header__icons">
     <img
       class="header__icons-bell"
@@ -19,19 +19,19 @@
   </div>
 </header>
 <section class="description">
-  <form class="student-form">
+  <form class="teacher-form">
     <div class="row">
       <img src="/assets/icons/add_photo.svg" alt="Добавить фото" />
-      <div class="student-form__top">
-        <h1 class="student-form__title">Имя Фамилия</h1>
+      <div class="teacher-form__top">
+        <h1 class="teacher-form__title">Имя Фамилия</h1>
         <div class="row">
-          <label class="student-form__email-label" for="e-mail">e-mail:</label>
-          <input class="student-form__email" type="email" name="e-mail" />
+          <label class="teacher-form__email-label" for="e-mail">e-mail:</label>
+          <input class="teacher-form__email" type="email" name="e-mail" />
         </div>
         <div class="row">
-          <label class="student-form__phone-label" for="Phone">телефон:</label>
+          <label class="teacher-form__phone-label" for="Phone">телефон:</label>
           <input
-            class="student-form__phone"
+            class="teacher-form__phone"
             type="tel"
             name="Phone"
             pattern="[0-9]{3,15}"
@@ -39,28 +39,35 @@
         </div>
       </div>
     </div>
-    <div class="student-form__bottom">
-      <label class="student-form__about-label" for="">О себе:</label>
+    <div class="teacher-form__bottom">
+      <label class="teacher-form__about-label" for=""
+        >Профессиональные навыки:</label
+      >
       <textarea
-        class="student-form__about"
+        class="teacher-form__about"
         name="about student"
         placeholder="Не более 200 символов"
       >
       </textarea>
       <div class="row">
-        <label class="student-form__teacher-label" for="teacher"
+        <label class="teacher-form__teacher-label" for="teacher"
           >Мой преподаватель:</label
         >
-        <input class="student-form__teacher" type="text" name="teacher" />
+        <input class="teacher-form__teacher" type="text" name="teacher" />
       </div>
       <div class="right">
-        <button class="student-form__save">сохранить</button>
+        <button class="teacher-form__save">сохранить</button>
       </div>
     </div>
   </form>
 </section>
 <section class="calendar">
-  <h1 class="classes">Мои занятия</h1>
+  <h1 class="classes">Расписание занятий</h1>
+  <label class="open-slot__label" for="everyday"
+    ><input type="checkbox" class="open-slot__check" name="everyday" /><span
+      >Готов взять нового студента</span
+    ></label
+  >
   <app-calendar></app-calendar>
   <button class="create">создать сообщение</button>
 </section>
