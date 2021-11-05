@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthComponent } from './login/auth/auth.component';
-import { RegisterComponent } from './login/register/register.component';
-import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 import { TutorComponent } from './tutor/tutor.component';
 import { StudentComponent } from './student/student.component';
 import { AutocompleteComponent } from './shared/autocomplete/autocomplete.component';
@@ -25,7 +25,7 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent,
+    LoginComponent,
     RegisterComponent,
     ForgotPasswordComponent,
     TutorComponent,
