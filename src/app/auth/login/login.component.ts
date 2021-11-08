@@ -10,7 +10,9 @@ export class LoginComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   login() {
-    this.http.get('assets/user-accounts.json');
+    this.http.get('/assets/user-accounts.json').subscribe((accounts) => {
+      console.log(accounts);
+    });
   }
 
   ngOnInit(): void {}
