@@ -10,7 +10,7 @@ export class LoginComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   login() {
-    this.http.get(url:'assets/user-accounts.json')
+    this.http.get('assets/user-accounts.json');
   }
 
   ngOnInit(): void {}
