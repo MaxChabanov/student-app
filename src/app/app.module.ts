@@ -9,18 +9,14 @@ import { RegisterComponent } from './auth/register/register.component';
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 import { TutorComponent } from './tutor/tutor.component';
 import { StudentComponent } from './student/student.component';
-import { AutocompleteComponent } from './shared/autocomplete/autocomplete.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Forms
 import { ReactiveFormsModule } from '@angular/forms';
 
-// Material
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-import { CalendarComponent } from './shared/calendar/calendar.component';
+//Feature Modules
+import { SharedModule } from './shared/shared.module';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -30,19 +26,15 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
     ForgotPasswordComponent,
     TutorComponent,
     StudentComponent,
-    AutocompleteComponent,
-    CalendarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatAutocompleteModule,
     ReactiveFormsModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatInputModule,
+    SharedModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
