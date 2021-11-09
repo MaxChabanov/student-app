@@ -10,7 +10,7 @@ export class LoginComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   login() {
-    this.http.get('/assets/user-accounts.json').subscribe((accounts) => {
+    this.http.get('http://localhost:3000/account1').subscribe((accounts) => {
       console.log(accounts);
     });
   }
