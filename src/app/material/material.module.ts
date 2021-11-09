@@ -7,15 +7,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 
-@NgModule({
-  imports: [
-    CommonModule,
-    MatAutocompleteModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatInputModule,
-  ],
+let materialArray = [
+  MatAutocompleteModule,
+  MatFormFieldModule,
+  MatSelectModule,
+  MatInputModule,
+];
 
-  exports: [],
+@NgModule({
+  imports: [CommonModule, ...materialArray],
+
+  exports: [...materialArray],
 })
 export class MaterialModule {}
