@@ -12,6 +12,8 @@ import { StudentComponent } from './student/student.component';
 import { AutocompleteComponent } from './shared/autocomplete/autocomplete.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { HttpClientModule } from '@angular/common/http';
+
 // Forms
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -43,6 +45,7 @@ import { CalendarComponent } from './shared/calendar/calendar.component';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
