@@ -16,10 +16,32 @@ export class StudentComponent implements OnInit {
 
   constructor(private _snackBar: MatSnackBar) {}
 
-  openSnackBar() {
-    this._snackBar.open('Test message', 'Ok', {
+  openSnackBarPrimary() {
+    this._snackBar.open('Test message primary', 'Ok', {
       horizontalPosition: 'end',
       verticalPosition: 'bottom',
+      panelClass: ['primary-snackbar'],
+    });
+  }
+  openSnackBarWarn() {
+    this._snackBar.open('Test message warn', 'Ok', {
+      horizontalPosition: 'end',
+      verticalPosition: 'bottom',
+      panelClass: ['warn-snackbar'],
+    });
+  }
+  openSnackBarError() {
+    this._snackBar.open('Test message error', 'Ok', {
+      horizontalPosition: 'end',
+      verticalPosition: 'bottom',
+      panelClass: ['error-snackbar'],
+    });
+  }
+  openSnackBarSuccess() {
+    this._snackBar.open('Test message success', 'Ok', {
+      horizontalPosition: 'end',
+      verticalPosition: 'bottom',
+      panelClass: ['success-snackbar'],
     });
   }
 }
