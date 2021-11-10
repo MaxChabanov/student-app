@@ -24,6 +24,11 @@
       <img src="/assets/icons/add_photo.svg" alt="Добавить фото" />
       <div class="student-form__top">
         <h1 class="student-form__title">Имя Фамилия</h1>
+
+        <button mat-raised-button color="primary" (click)="openSnackBar()">
+          Send message
+        </button>
+
         <div class="row">
           <label class="student-form__email-label" for="e-mail">e-mail:</label>
           <input class="student-form__email" type="email" name="e-mail" />
