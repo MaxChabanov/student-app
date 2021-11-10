@@ -50,6 +50,7 @@ $student-app-theme: mat.define-light-theme(
   margin: 0;
   padding: 0;
 }
+
 html,
 body {
   height: 100%;
@@ -59,11 +60,22 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-html,
-body {
-  height: 100%;
+// Custom styles
+.primary-snackbar {
+  background: hsl(207, 100%, 56%);
 }
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+.warn-snackbar {
+  background: hsl(56, 100%, 56%);
+  color: black;
+}
+.error-snackbar {
+  background: hsl(0, 84%, 35%);
+  color: black;
+}
+.success-snackbar {
+  background: hsl(128, 79%, 45%);
+  color: black;
+}
+.mat-simple-snackbar-action {
+  color: black;
 }
