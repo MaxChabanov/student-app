@@ -23,6 +23,7 @@ const routes: Routes = [
     /*canActivate: [StudentTutorGuard],*/
   },
   { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'student', loadChildren: () => import('./user-roles/user-roles.module').then(m => m.UserRolesModule) },
   // { path: '**', component: NotFoundComponent },
 ];
 

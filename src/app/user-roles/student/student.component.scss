@@ -1,0 +1,186 @@
+.header {
+  width: 100%;
+  height: 81px;
+  background: #272727;
+  display: flex;
+  flex-direction: row;
+  &__title {
+    font-family: "Roboto Bold";
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: auto;
+  }
+  &__icons {
+    position: absolute;
+    right: 80px;
+    line-height: 7em;
+    top: 7px;
+    &-logout {
+      margin-left: 23px;
+    }
+    &-profile {
+      margin-left: 20px;
+    }
+  }
+}
+.description {
+  padding: 84px 260px 0 260px;
+}
+.student-form {
+  &__row {
+    display: flex;
+    flex-direction: row;
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    margin-left: 122px;
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-family: "Roboto Bold";
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #272727;
+    margin-bottom: 57px;
+    margin-top: 47px;
+  }
+  &__email {
+    width: 464px;
+    height: 51px;
+    background: #ffffff;
+    border: 1px solid #a4a4a4;
+    box-sizing: border-box;
+    border-radius: 30px;
+    outline: none;
+    margin-left: 58px;
+    padding: 0 20px;
+    font-size: 14px;
+    &-label {
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: #000000;
+    }
+  }
+  &__phone {
+    width: 464px;
+    height: 51px;
+    background: #ffffff;
+    border: 1px solid #a4a4a4;
+    box-sizing: border-box;
+    border-radius: 30px;
+    outline: none;
+    margin-left: 37px;
+    padding: 0 20px;
+    font-size: 14px;
+    &-label {
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: #000000;
+    }
+  }
+  &__about {
+    width: 1000px;
+    height: 170px;
+    background: #ffffff;
+    border: 1px solid #c6c6c6;
+    box-sizing: border-box;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 13px;
+    margin-bottom: 54px !important;
+    padding: 22px 28px;
+    font-size: 14px;
+    &-label {
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: #000000;
+      margin-top: 38px;
+    }
+  }
+  &__teacher {
+    width: 640px;
+    background: #ffffff;
+    border: none;
+    border-bottom: 1px solid #000000;
+    box-sizing: border-box;
+    outline: none;
+    margin-left: 7px;
+    margin-bottom: 28px;
+    padding: 0 7px;
+    font-size: 14px;
+    &-label {
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      align-items: center;
+      color: #000000;
+    }
+  }
+  &__save {
+    width: 292px;
+    height: 50px;
+    border-radius: 30px;
+    background: #0075ff;
+    font-family: "Roboto Bold";
+    font-size: 18px;
+    border: none;
+    line-height: 21px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    outline: none;
+    margin-bottom: 86px;
+    cursor: pointer;
+  }
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 17px;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.create {
+  margin-top: 60px;
+  width: 292px;
+  height: 50px;
+  border-radius: 30px;
+  background: #0075ff;
+  font-family: "Roboto Bold";
+  font-size: 18px;
+  border: none;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  outline: none;
+  margin-bottom: 86px;
+  cursor: pointer;
+  margin-left: 60%;
+}
