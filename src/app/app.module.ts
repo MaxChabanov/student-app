@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthComponent } from './login/auth/auth.component';
-import { RegisterComponent } from './login/register/register.component';
-import { ForgotPasswordComponent } from './login/forgot-password/forgot-password.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 import { TutorComponent } from './tutor/tutor.component';
 import { StudentComponent } from './student/student.component';
 import { AutocompleteComponent } from './shared/autocomplete/autocomplete.component';
@@ -20,20 +20,28 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatBadgeModule } from '@angular/material/badge';
+
 import { CalendarComponent } from './shared/calendar/calendar.component';
-import { TeacherComponent } from './teacher/teacher.component';
+import { PaymentComponent } from './payment/payment.component';
+import { TutorSlotComponent } from './shared/tutor-slot/tutor-slot.component';
+import { StudentSlotComponent } from './shared/student-slot/student-slot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthComponent,
+    LoginComponent,
     RegisterComponent,
     ForgotPasswordComponent,
     TutorComponent,
     StudentComponent,
     AutocompleteComponent,
     CalendarComponent,
-    TeacherComponent,
+    PaymentComponent,
+    TutorSlotComponent,
+    StudentSlotComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +53,9 @@ import { TeacherComponent } from './teacher/teacher.component';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatBadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
