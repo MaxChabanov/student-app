@@ -20,18 +20,48 @@
 </header>
 <div class="container">
   <section class="description">
-    <form class="student-form">
+    <form student-form>
       <div class="row">
         <img src="/assets/icons/add_photo.svg" alt="Добавить фото" />
         <div class="student-form__top">
           <h1 class="student-form__title">Имя Фамилия</h1>
-          <div class="row form-row">
+
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="openSnackBarPrimary()"
+          >
+            Send message primary
+          </button>
+          <button
+            mat-raised-button
+            style="background-color: yellow"
+            (click)="openSnackBarWarn()"
+          >
+            Send message warn
+          </button>
+          <button
+            mat-raised-button
+            style="background-color: red"
+            (click)="openSnackBarError()"
+          >
+            Send message error
+          </button>
+          <button
+            mat-raised-button
+            style="background-color: green"
+            (click)="openSnackBarSuccess()"
+          >
+            Send message success
+          </button>
+
+          <div class="row">
             <label class="student-form__email-label" for="e-mail"
               >e-mail:</label
             >
             <input class="student-form__email" type="email" name="e-mail" />
           </div>
-          <div class="row form-row">
+          <div class="row">
             <label class="student-form__phone-label" for="Phone"
               >телефон:</label
             >
@@ -48,11 +78,14 @@
         <label class="student-form__about-label" for="">О себе:</label>
         <textarea
           class="student-form__about"
-          name="about student"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
           placeholder="Не более 200 символов"
         >
         </textarea>
-        <div class="row form-row">
+        <div class="row">
           <label class="student-form__teacher-label" for="teacher"
             >Мой преподаватель:</label
           >
@@ -64,8 +97,8 @@
       </div>
     </form>
   </section>
+
   <section class="calendar">
-    <h1 class="classes">Мои занятия</h1>
     <app-calendar></app-calendar>
     <button class="create">создать сообщение</button>
   </section>
