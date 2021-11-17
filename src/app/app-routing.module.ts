@@ -12,18 +12,22 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'auth', component: LoginComponent },
-  {
-    path: 'tutor',
-    component: TutorComponent,
-    canActivate: [StudentTutorGuard],
-  },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
   {
     path: 'student',
-    component: StudentComponent,
-    /*canActivate: [StudentTutorGuard],*/
+    loadChildren: () =>
+      import('./user-roles/student/student.module').then(
+        (m) => m.StudentModule
+      ),
+    // canActivate: [StudentTutorGuard],
   },
-  { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'student', loadChildren: () => import('./user-roles/user-roles.module').then(m => m.UserRolesModule) },
+  {
+    path: 'tutor',
+    loadChildren: () =>
+      import('./user-roles/tutor/tutor.module').then((m) => m.TutorModule),
+    // canActivate: [StudentTutorGuard],
+  },
+
   // { path: '**', component: NotFoundComponent },
 ];
 
