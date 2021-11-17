@@ -7,8 +7,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
-import { TutorComponent } from './tutor/tutor.component';
-import { StudentComponent } from './student/student.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -26,8 +24,6 @@ import { MaterialModule } from './material/material.module';
     LoginComponent,
     RegisterComponent,
     ForgotPasswordComponent,
-    TutorComponent,
-    StudentComponent,
   ],
   imports: [
     BrowserModule,
