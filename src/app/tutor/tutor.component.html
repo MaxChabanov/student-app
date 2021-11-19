@@ -1,1 +1,86 @@
-<p>tutor works!</p>
+<header class="header">
+  <h1 class="header__title">профиль преподавателя</h1>
+  <div class="header__icons">
+    <img
+      class="header__icons-bell"
+      src="/assets/icons/bell.svg"
+      alt="Уведомления"
+    />
+    <img
+      class="header__icons-profile"
+      src="/assets/icons/profile.svg"
+      alt="Ваш профиль"
+    />
+    <img
+      class="header__icons-logout"
+      src="/assets/icons/logout.svg"
+      alt="Выйти"
+    />
+  </div>
+</header>
+<div class="container">
+  <section class="description">
+    <form class="teacher-form">
+      <div class="row">
+        <img src="/assets/icons/add_photo.svg" alt="Добавить фото" />
+        <div class="teacher-form__top">
+          <h1 class="teacher-form__title">Имя Фамилия</h1>
+          <div class="row form-row">
+            <label class="teacher-form__email-label" for="e-mail"
+              >e-mail:</label
+            >
+            <input class="teacher-form__email" type="email" name="e-mail" />
+          </div>
+          <div class="row form-row">
+            <label class="teacher-form__phone-label" for="Phone"
+              >телефон:</label
+            >
+            <input
+              class="teacher-form__phone"
+              type="tel"
+              name="Phone"
+              pattern="[0-9]{3,15}"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="teacher-form__bottom">
+        <label class="teacher-form__about-label" for=""
+          >Профессиональные навыки:</label
+        >
+        <textarea
+          class="teacher-form__about"
+          name="about student"
+          placeholder="Не более 200 символов"
+        >
+        </textarea>
+        <div class="right">
+          <button class="teacher-form__save">сохранить</button>
+        </div>
+      </div>
+    </form>
+  </section>
+  <section class="calendar">
+    <ul>
+      <li><h1 class="classes">Расписание занятий</h1></li>
+      <li>
+        <label class="open-slot__label" for="everyday"
+          ><input
+            type="checkbox"
+            class="open-slot__check"
+            name="everyday"
+          /><span>Готов взять нового студента</span></label
+        >
+      </li>
+    </ul>
+    <app-calendar></app-calendar>
+    <h1 class="stud__title">Мои студенты</h1>
+    <!-- <mat-form-field appearance="fill">
+        <mat-select value="неделя" [ngStyle]="{ width: '920px' }">
+          <mat-option value="день">день</mat-option>
+          <mat-option value="неделя">неделя</mat-option>
+        </mat-select>
+      </mat-form-field> -->
+    <button class="create">создать сообщение</button>
+  </section>
+</div>

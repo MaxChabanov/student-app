@@ -1,0 +1,103 @@
+.open-slot {
+  width: 160px;
+  height: 117px;
+  background: #ffffff;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding-top: 19px;
+  &__title {
+    font-family: "Roboto Bold";
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 20px 25px;
+    margin-top: 0;
+  }
+  &__label {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    display: block;
+    cursor: pointer;
+    margin-top: 17px;
+  }
+  &__comment {
+    width: 215px;
+    height: 70px;
+    background: #ffffff;
+    border: 1px solid #a4a4a4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 24px 34px 31px 33px;
+    font-size: 14px;
+    resize: none;
+    padding: 11px 12px;
+  }
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 0 34px 30px 33px;
+}
+.cansel-btn,
+.send-btn {
+  width: 97px;
+  height: 32px;
+  background: #0075ff;
+  border-radius: 30px;
+  font-family: "Roboto Bold";
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.cansel-btn:disabled,
+.send-btn:disabled {
+  background: #c7e0fa;
+}
+.open-slot__label input[type="checkbox"] {
+  padding: 0;
+  height: initial;
+  width: initial;
+  display: none;
+  cursor: pointer;
+  // margin: 0 12px 0 389px;
+}
+.open-slot__label span {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  // padding: 0 0 0 43px;
+  margin-left: 21px;
+}
+.open-slot__label span::before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #a4a4a4;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 7px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.open-slot__label input[type="checkbox"]:checked + span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #0079bf;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
