@@ -150,9 +150,7 @@ td {
 }
 
 //datepicker
-::ng-deep .mat-raised-button:not([class*="mat-elevation-z"]) {
-  box-shadow: none;
-}
+
 .date-btn {
   background: url("/assets/icons/calendar.svg") 50% 50% no-repeat;
   width: 30px;
@@ -160,7 +158,7 @@ td {
   border-radius: 5px;
   outline: none;
   border: none;
-  top: -9px;
+  top: 8px;
   position: relative;
   left: 20px;
   cursor: pointer;
