@@ -1,0 +1,180 @@
+.header {
+  width: 100%;
+  height: 81px;
+  background: #272727;
+  display: flex;
+  flex-direction: row;
+  &__title {
+    font-family: "Roboto Bold";
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: auto;
+  }
+  &__icons {
+    position: relative;
+    right: 80px;
+    line-height: 7em;
+    top: 7px;
+    &-logout {
+      margin-left: 23px;
+    }
+    &-profile {
+      margin-left: 20px;
+    }
+  }
+}
+.container {
+  margin: 0 80px;
+}
+.pay {
+  padding: 54px 0;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.title {
+  font-family: "Roboto Bold";
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.subtitle {
+  font-family: "Roboto Bold";
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 53px;
+}
+.payment {
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 34px 49px 60px 45px;
+  margin: 25px 34px 93px 0;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__subwrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  &__title {
+    font-family: "Roboto Regular";
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+  &__subwrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  &__sum {
+    width: 224px;
+    height: 54px;
+    background: #ffffff;
+    border: 1px solid #a4a4a4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: "Roboto Bold";
+  }
+  &__btn {
+    width: 224px;
+    height: 54px;
+    background: #0075ff;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-family: "Roboto Bold";
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: 55px;
+  }
+}
+.sum {
+  margin-left: 34px;
+  padding: 64px 0 60px 0;
+  &__bold {
+    font-family: "Roboto Bold";
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+  }
+  &__reg {
+    font-family: "Roboto Regular";
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+  }
+  &__lesson {
+    margin-bottom: 39px;
+    .sum__reg {
+      margin-left: 81px;
+    }
+  }
+  &__amount {
+    .sum__reg {
+      margin-left: 58px;
+    }
+  }
+}
+.pay-table {
+  width: 100%;
+  .table-title {
+    background: #c7e0fa;
+    font-family: "Roboto Bold";
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000000;
+    p {
+      text-align: center;
+      margin: 0;
+    }
+  }
+  td {
+    border: 1px solid #a4a4a4;
+    height: 41px;
+  }
+  &__date {
+    width: 16%;
+  }
+  &__admission {
+    width: 35%;
+  }
+  &__write-off {
+    width: 35%;
+  }
+  &__sum {
+    width: 16%;
+  }
+}
+@media (max-width: 1200px) {
+  .pay__wrapper {
+    flex-direction: column;
+  }
+  .payment {
+    margin: 25px 100px 93px 0;
+  }
+  .sum {
+    padding-top: 0;
+  }
+}

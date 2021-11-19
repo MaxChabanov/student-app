@@ -18,82 +18,83 @@
     />
   </div>
 </header>
-<section class="description">
-  <form student-form>
-    <div class="row">
-      <img src="/assets/icons/add_photo.svg" alt="Добавить фото" />
-      <div class="student-form__top">
-        <h1 class="student-form__title">Имя Фамилия</h1>
-
-        <button
-          mat-raised-button
-          color="primary"
-          (click)="openSnackBarPrimary()"
-        >
-          Send message primary
-        </button>
-        <button
-          mat-raised-button
-          style="background-color: yellow"
-          (click)="openSnackBarWarn()"
-        >
-          Send message warn
-        </button>
-        <button
-          mat-raised-button
-          style="background-color: red"
-          (click)="openSnackBarError()"
-        >
-          Send message error
-        </button>
-        <button
-          mat-raised-button
-          style="background-color: green"
-          (click)="openSnackBarSuccess()"
-        >
-          Send message success
-        </button>
-
-        <div class="row">
-          <label class="student-form__email-label" for="e-mail">e-mail:</label>
-          <input class="student-form__email" type="email" name="e-mail" />
-        </div>
-        <div class="row">
-          <label class="student-form__phone-label" for="Phone">телефон:</label>
-          <input
-            class="student-form__phone"
-            type="tel"
-            name="Phone"
-            pattern="[0-9]{3,15}"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="student-form__bottom">
-      <label class="student-form__about-label" for="">О себе:</label>
-      <textarea
-        class="student-form__about"
-        name=""
-        id=""
-        cols="30"
-        rows="10"
-        placeholder="Не более 200 символов"
-      >
-      </textarea>
+<div class="container">
+  <section class="description">
+    <form class="student-form">
       <div class="row">
-        <label class="student-form__teacher-label" for="teacher"
-          >Мой преподаватель:</label
+        <img src="/assets/icons/add_photo.svg" alt="Добавить фото" />
+        <div class="student-form__top">
+          <h1 class="student-form__title">Имя Фамилия</h1>
+          <button
+            mat-raised-button
+            color="primary"
+            (click)="openSnackBarPrimary()"
+          >
+            Send message primary
+          </button>
+          <button
+            mat-raised-button
+            style="background-color: yellow"
+            (click)="openSnackBarWarn()"
+          >
+            Send message warn
+          </button>
+          <button
+            mat-raised-button
+            style="background-color: red"
+            (click)="openSnackBarError()"
+          >
+            Send message error
+          </button>
+          <button
+            mat-raised-button
+            style="background-color: green"
+            (click)="openSnackBarSuccess()"
+          >
+            Send message success
+          </button>
+          <div class="row form-row">
+            <label class="student-form__email-label" for="e-mail"
+              >e-mail:</label
+            >
+            <input class="student-form__email" type="email" name="e-mail" />
+          </div>
+          <div class="row form-row">
+            <label class="student-form__phone-label" for="Phone"
+              >телефон:</label
+            >
+            <input
+              class="student-form__phone"
+              type="tel"
+              name="Phone"
+              pattern="[0-9]{3,15}"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="student-form__bottom">
+        <label class="student-form__about-label" for="">О себе:</label>
+        <textarea
+          class="student-form__about"
+          name="about student"
+          placeholder="Не более 200 символов"
         >
-        <input class="student-form__teacher" type="text" name="teacher" />
+        </textarea>
+        <div class="row form-row">
+          <label class="student-form__teacher-label" for="teacher"
+            >Мой преподаватель:</label
+          >
+          <input class="student-form__teacher" type="text" name="teacher" />
+        </div>
+        <div class="right">
+          <button class="student-form__save">сохранить</button>
+        </div>
       </div>
-      <div class="right">
-        <button class="student-form__save">сохранить</button>
-      </div>
-    </div>
-  </form>
-</section>
-
-<section class="calendar">
-  <app-calendar></app-calendar>
-  <button class="create">создать сообщение</button>
-</section>
+    </form>
+  </section>
+  <section class="calendar">
+    <h1 class="classes">Мои занятия</h1>
+    <app-calendar></app-calendar>
+    <button class="create">создать сообщение</button>
+  </section>
+</div>
