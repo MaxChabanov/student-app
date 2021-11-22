@@ -65,7 +65,6 @@
     box-sizing: border-box;
     border-radius: 30px;
     outline: none;
-    margin-left: 58px;
     padding: 0 20px;
     font-size: 20px;
     &-label {
@@ -86,7 +85,6 @@
     box-sizing: border-box;
     border-radius: 30px;
     outline: none;
-    margin-left: 37px;
     padding: 0 20px;
     font-size: 20px;
     &-label {
@@ -163,6 +161,8 @@
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
   margin-top: 17px;
 }
 .right {
@@ -195,15 +195,17 @@
   align-items: center;
   color: #272727;
 }
+.normal {
+  justify-content: normal;
+  width: 100%;
+}
 @media (max-width: 1200px) {
   .container {
     margin: 0 80px;
   }
-  .description {
-    padding: 84px 80px 0 80px;
-  }
   .row {
     flex-direction: column;
+    width: 100%;
   }
   .student-form {
     &__title {
@@ -218,10 +220,10 @@
       margin-right: 0px;
     }
     &__email {
-      width: 87%;
+      width: 75%;
     }
     &__phone {
-      width: 87%;
+      width: 75%;
     }
     &__top {
       margin-left: 0;
@@ -232,15 +234,104 @@
       display: block;
       margin: 0 auto;
     }
+    &__teacher {
+      width: 70%;
+    }
+    &__teacher-label {
+      width: 30%;
+    }
   }
   .form-row {
     display: flex;
     flex-direction: row;
   }
-}
-@media (max-width: 800px) {
   .create {
+    width: 100%;
     margin: 36px auto 86px auto;
     display: block;
+  }
+  .normal {
+    justify-content: space-between;
+  }
+  .student-form__about {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .student-form {
+    &__email-label {
+      font-size: 16px;
+    }
+    &__phone-label {
+      font-size: 16px;
+    }
+    &__teacher-label {
+      font-size: 16px;
+    }
+    &__email {
+      padding: 0px 15px;
+      font-size: 16px;
+    }
+    &__phone {
+      padding: 0px 15px;
+      font-size: 16px;
+    }
+    &__about {
+      margin-top: 13px;
+      padding: 18px 22px;
+      font-size: 16px;
+    }
+    &__teacher-label {
+      width: 38%;
+    }
+  }
+}
+@media (max-width: 630px) {
+  .container {
+    margin: 0 10px;
+  }
+  .student-form {
+    &__email-label {
+      font-size: 14px;
+    }
+    &__phone-label {
+      font-size: 14px;
+    }
+    &__teacher-label {
+      font-size: 14px;
+    }
+    &__email {
+      padding: 0px 15px;
+      font-size: 14px;
+    }
+    &__phone {
+      padding: 0px 15px;
+      font-size: 14px;
+    }
+    &__about {
+      padding: 18px 22px;
+      font-size: 14px;
+    }
+    &__teacher {
+      width: 100%;
+    }
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 530px) {
+  .description[_ngcontent-wxm-c128] {
+    padding: 25px 0 0 0;
+  }
+  .student-form {
+    img {
+      width: 220px;
+      height: 220px;
+    }
+    &__teacher-label {
+      font-size: 12px;
+      width: 50%;
+    }
   }
 }
