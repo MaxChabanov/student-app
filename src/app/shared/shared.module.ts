@@ -8,8 +8,6 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { StudentSlotComponent } from './student-slot/student-slot.component';
 import { TutorSlotComponent } from './tutor-slot/tutor-slot.component';
 import { MaterialModule } from '../material/material.module';
-import { HeaderComponent } from './header/header.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   imports: [CommonModule, MaterialModule, FormsModule, ReactiveFormsModule],
@@ -18,14 +16,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     CalendarComponent,
     StudentSlotComponent,
     TutorSlotComponent,
-    HeaderComponent,
-    SidebarComponent,
   ],
-  exports: [
-    AutocompleteComponent,
-    CalendarComponent,
-    HeaderComponent,
-    SidebarComponent,
-  ],
+  exports: [AutocompleteComponent, CalendarComponent],
 })
 export class SharedModule {}
