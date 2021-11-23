@@ -28,7 +28,10 @@
   }
 }
 .container {
-  margin: 84px 260px 0;
+  margin: 260px 0;
+}
+.description {
+  padding: 84px 0 0 0;
 }
 .student-form {
   &__row {
@@ -39,20 +42,6 @@
     display: flex;
     flex-direction: column;
     margin-left: 122px;
-  }
-  &__bottom {
-    display: flex;
-    flex-direction: column;
-  }
-  &__label {
-    font-family: "Roboto";
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: #000000;
-    width: 114px;
   }
   &__title {
     font-family: "Roboto Bold";
@@ -129,9 +118,28 @@
     cursor: pointer;
   }
 }
+.form__label {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  width: 240px;
+}
 .flex-row {
   display: flex;
   margin-top: 17px;
+}
+.field {
+  display: flex;
+  align-items: center;
+  margin-top: 17px;
+}
+.teacher {
+  position: relative;
+  top: -9px;
 }
 .about-lable {
   margin-top: 38px;
@@ -140,6 +148,11 @@
   width: 175px;
   position: relative;
   top: -9px;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 38px;
 }
 .right {
   display: flex;
@@ -173,14 +186,18 @@
 }
 @media (max-width: 1200px) {
   .container {
-    margin: 84px 80px 0;
+    margin: 0 80px;
+  }
+  .description {
+    padding: 20px 0 0 0;
   }
   .flex-row {
     flex-direction: column;
   }
   .student-form__email,
-  .student-form__phone {
-    width: 85%;
+  .student-form__phone,
+  .student-form__about {
+    width: 100%;
   }
   .student-form {
     &__title {
@@ -194,9 +211,6 @@
     &__top {
       margin-left: 0;
     }
-    &__about {
-      width: 100%;
-    }
     img {
       width: 300px;
       height: 300px;
@@ -204,7 +218,7 @@
       margin: 0 auto;
     }
     &__teacher {
-      width: 70%;
+      width: 100%;
     }
   }
   .form-row {
@@ -237,7 +251,7 @@
 }
 @media (max-width: 630px) {
   .container {
-    margin: 84px 10px 0;
+    margin: 0 10px;
   }
   .student-form__label {
     font-size: 14px;
@@ -261,9 +275,6 @@
   }
 }
 @media (max-width: 530px) {
-  .container {
-    margin: 25px 10px 0;
-  }
   .student-form {
     img {
       width: 220px;
