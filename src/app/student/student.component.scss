@@ -1,37 +1,5 @@
-.header {
-  width: 100%;
-  height: 81px;
-  background: #272727;
-  display: flex;
-  flex-direction: row;
-  &__title {
-    font-family: "Roboto Bold";
-    font-size: 16px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin: auto;
-  }
-  &__icons {
-    position: absolute;
-    right: 80px;
-    line-height: 7em;
-    top: 7px;
-    &-logout {
-      margin-left: 23px;
-    }
-    &-profile {
-      margin-left: 20px;
-    }
-  }
-}
 .container {
-  margin: 0 260px;
-}
-.description {
-  padding: 84px 0 0 0;
+  margin: 84px 260px 0;
 }
 .student-form {
   &__row {
@@ -46,6 +14,16 @@
   &__bottom {
     display: flex;
     flex-direction: column;
+  }
+  &__label {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    width: 114px;
   }
   &__title {
     font-family: "Roboto Bold";
@@ -67,15 +45,6 @@
     outline: none;
     padding: 0 20px;
     font-size: 20px;
-    &-label {
-      font-family: "Roboto";
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
-      display: flex;
-      align-items: center;
-      color: #000000;
-    }
   }
   &__phone {
     width: 384px;
@@ -87,18 +56,9 @@
     outline: none;
     padding: 0 20px;
     font-size: 20px;
-    &-label {
-      font-family: "Roboto";
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
-      display: flex;
-      align-items: center;
-      color: #000000;
-    }
   }
   &__about {
-    width: 920px;
+    width: 90%;
     height: 170px;
     background: #ffffff;
     border: 1px solid #c6c6c6;
@@ -110,19 +70,9 @@
     padding: 22px 28px;
     font-size: 20px;
     resize: none;
-    &-label {
-      font-family: "Roboto";
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
-      display: flex;
-      align-items: center;
-      color: #000000;
-      margin-top: 38px;
-    }
   }
   &__teacher {
-    width: 40%;
+    width: 70%;
     background: #ffffff;
     border: none;
     border-bottom: 1px solid #000000;
@@ -131,14 +81,6 @@
     margin: -5px 0 28px 7px;
     padding: 0 7px;
     font-size: 20px;
-    &-label {
-      font-family: "Roboto";
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
-      align-items: center;
-      color: #000000;
-    }
   }
   &__save {
     width: 292px;
@@ -158,18 +100,23 @@
     cursor: pointer;
   }
 }
-.row {
+.flex-row {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 500px;
   margin-top: 17px;
+}
+.about-lable {
+  margin-top: 38px;
+}
+.teacher-label {
+  width: 175px;
+  position: relative;
+  top: -9px;
 }
 .right {
   display: flex;
   justify-content: flex-end;
 }
-.create {
+.create-btn {
   margin-top: 60px;
   width: 292px;
   height: 50px;
@@ -195,38 +142,32 @@
   align-items: center;
   color: #272727;
 }
-.normal {
-  justify-content: normal;
-  width: 100%;
-}
 @media (max-width: 1200px) {
   .container {
-    margin: 0 80px;
+    margin: 84px 80px 0;
   }
-  .row {
+  .flex-row {
     flex-direction: column;
     width: 100%;
+  }
+  .student-form__email,
+  .student-form__phone {
+    width: 85%;
   }
   .student-form {
     &__title {
       text-align: center;
       display: block;
     }
-    &__about {
-      width: 100%;
-    }
     &__save {
       width: 100%;
       margin-right: 0px;
     }
-    &__email {
-      width: 75%;
-    }
-    &__phone {
-      width: 75%;
-    }
     &__top {
       margin-left: 0;
+    }
+    &__about {
+      width: 100%;
     }
     img {
       width: 300px;
@@ -237,83 +178,54 @@
     &__teacher {
       width: 70%;
     }
-    &__teacher-label {
-      width: 30%;
-    }
   }
   .form-row {
     display: flex;
     flex-direction: row;
   }
-  .create {
+  .create-btn {
     width: 100%;
     margin: 36px auto 86px auto;
     display: block;
   }
-  .normal {
-    justify-content: space-between;
-  }
-  .student-form__about {
-    width: 100%;
-  }
 }
 @media (max-width: 800px) {
+  .student-form__label,
+  .student-form__teacher-label {
+    font-size: 16px;
+  }
+  .student-form__email,
+  .student-form__phone {
+    padding: 0px 15px;
+    font-size: 16px;
+  }
   .student-form {
-    &__email-label {
-      font-size: 16px;
-    }
-    &__phone-label {
-      font-size: 16px;
-    }
-    &__teacher-label {
-      font-size: 16px;
-    }
-    &__email {
-      padding: 0px 15px;
-      font-size: 16px;
-    }
-    &__phone {
-      padding: 0px 15px;
-      font-size: 16px;
-    }
     &__about {
       margin-top: 13px;
       padding: 18px 22px;
       font-size: 16px;
     }
-    &__teacher-label {
-      width: 38%;
-    }
   }
 }
 @media (max-width: 630px) {
   .container {
-    margin: 0 10px;
+    margin: 84px 10px 0;
+  }
+  .student-form__label {
+    font-size: 14px;
+  }
+  .student-form__email,
+  .student-form__phone {
+    padding: 0px 15px;
+    font-size: 14px;
   }
   .student-form {
-    &__email-label {
-      font-size: 14px;
-    }
-    &__phone-label {
-      font-size: 14px;
-    }
-    &__teacher-label {
-      font-size: 14px;
-    }
-    &__email {
-      padding: 0px 15px;
-      font-size: 14px;
-    }
-    &__phone {
-      padding: 0px 15px;
-      font-size: 14px;
-    }
     &__about {
       padding: 18px 22px;
       font-size: 14px;
     }
     &__teacher {
-      width: 100%;
+      width: 90%;
     }
     &__title {
       font-size: 30px;
@@ -321,17 +233,16 @@
   }
 }
 @media (max-width: 530px) {
-  .description[_ngcontent-wxm-c128] {
-    padding: 25px 0 0 0;
+  .container {
+    margin: 25px 10px 0;
   }
   .student-form {
     img {
       width: 220px;
       height: 220px;
     }
-    &__teacher-label {
+    &__label {
       font-size: 12px;
-      width: 50%;
     }
   }
 }

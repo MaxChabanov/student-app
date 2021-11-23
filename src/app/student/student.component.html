@@ -1,27 +1,8 @@
-<header class="header">
-  <h1 class="header__title">профиль студента</h1>
-  <div class="header__icons">
-    <img
-      class="header__icons-bell"
-      src="/assets/icons/bell.svg"
-      alt="Уведомления"
-    />
-    <img
-      class="header__icons-profile"
-      src="/assets/icons/profile.svg"
-      alt="Ваш профиль"
-    />
-    <img
-      class="header__icons-logout"
-      src="/assets/icons/logout.svg"
-      alt="Выйти"
-    />
-  </div>
-</header>
+<app-header></app-header>
 <div class="container">
   <section class="description">
     <form class="student-form">
-      <div class="row">
+      <div class="flex-row">
         <img src="/assets/icons/add_photo.svg" alt="Добавить фото" />
         <div class="student-form__top">
           <h1 class="student-form__title">Имя Фамилия</h1>
@@ -53,16 +34,14 @@
           >
             Send message success
           </button>
-          <div class="row form-row">
-            <label class="student-form__email-label" for="e-mail"
-              >e-mail:</label
-            >
+
+          <div class="flex-row form-row">
+            <label class="student-form__label" for="e-mail">e-mail:</label>
             <input class="student-form__email" type="email" name="e-mail" />
+            <br />
           </div>
-          <div class="row form-row">
-            <label class="student-form__phone-label" for="Phone"
-              >телефон:</label
-            >
+          <div class="flex-row form-row">
+            <label class="student-form__label" for="Phone">телефон:</label>
             <input
               class="student-form__phone"
               type="tel"
@@ -73,15 +52,17 @@
         </div>
       </div>
       <div class="student-form__bottom">
-        <label class="student-form__about-label" for="">О себе:</label>
+        <label class="student-form__label about-lable" for="about-student"
+          >О себе:</label
+        >
         <textarea
           class="student-form__about"
-          name="about student"
+          name="about-student"
           placeholder="Не более 200 символов"
         >
         </textarea>
-        <div class="row form-row normal">
-          <label class="student-form__teacher-label" for="teacher"
+        <div class="flex-row form-row">
+          <label class="student-form__label teacher-label" for="teacher"
             >Мой преподаватель:</label
           >
           <input class="student-form__teacher" type="text" name="teacher" />
@@ -94,7 +75,7 @@
   </section>
   <section class="calendar">
     <h1 class="classes">Мои занятия</h1>
-    <app-calendar></app-calendar>
-    <button class="create">создать сообщение</button>
+    <!-- <app-calendar></app-calendar> -->
+    <button class="create-btn">создать сообщение</button>
   </section>
 </div>
