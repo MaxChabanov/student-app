@@ -23,7 +23,7 @@
     <form class="student-form">
       <div class="flex-row">
         <img src="/assets/icons/add_photo.svg" alt="Добавить фото" />
-        <div class="student-form__top">
+        <div class="student-form__contacts">
           <h1 class="student-form__title">Имя Фамилия</h1>
           <button
             mat-raised-button
@@ -55,13 +55,13 @@
           </button>
 
           <div class="field">
-            <label class="form__label" for="e-mail">e-mail:</label>
-            <input class="student-form__email" type="email" name="e-mail" />
+            <label class="field__label" for="e-mail">e-mail:</label>
+            <input class="field__email" type="email" name="e-mail" />
           </div>
           <div class="field">
-            <label class="form__label" for="Phone">телефон:</label>
+            <label class="field__label" for="Phone">телефон:</label>
             <input
-              class="student-form__phone"
+              class="field__phone"
               type="tel"
               name="Phone"
               pattern="[0-9]{3,15}"
@@ -69,7 +69,7 @@
           </div>
         </div>
       </div>
-      <div class="bottom">
+      <div class="form-down">
         <label class="form__label" for="about-student">О себе:</label>
         <textarea
           class="student-form__about"
@@ -78,12 +78,12 @@
         >
         </textarea>
         <div class="field">
-          <label class="form__label teacher" for="teacher"
+          <label class="field__label field__label_right-text" for="teacher"
             >Мой преподаватель:</label
           >
-          <input class="student-form__teacher" type="text" name="teacher" />
+          <input class="field__teacher" type="text" name="teacher" />
         </div>
-        <div class="right">
+        <div class="student-form__right-wrapper">
           <button class="student-form__save">сохранить</button>
         </div>
       </div>

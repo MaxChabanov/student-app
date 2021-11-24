@@ -28,7 +28,7 @@
   }
 }
 .container {
-  margin: 260px 0;
+  margin: 0 260px;
 }
 .description {
   padding: 84px 0 0 0;
@@ -38,10 +38,11 @@
     display: flex;
     flex-direction: row;
   }
-  &__top {
+  &__contacts {
     display: flex;
     flex-direction: column;
     margin-left: 122px;
+    width: 57%;
   }
   &__title {
     font-family: "Roboto Bold";
@@ -53,6 +54,63 @@
     margin-bottom: 57px;
     margin-top: 47px;
   }
+
+  &__about {
+    width: 100%;
+    height: 170px;
+    background: #ffffff;
+    border: 1px solid #c6c6c6;
+    box-sizing: border-box;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 13px;
+    margin-bottom: 54px !important;
+    padding: 22px 28px;
+    font-size: 20px;
+    resize: none;
+  }
+
+  &__save {
+    width: 292px;
+    height: 50px;
+    border-radius: 30px;
+    background: #0075ff;
+    font-family: "Roboto Bold";
+    font-size: 18px;
+    border: none;
+    line-height: 21px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    outline: none;
+    margin-bottom: 86px;
+    margin-right: 80px;
+    cursor: pointer;
+  }
+  &__right-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.form__label,
+.field__label {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  width: 240px;
+}
+.flex-row {
+  display: flex;
+  margin-top: 17px;
+}
+.field {
+  display: flex;
+  align-items: center;
+  margin-top: 17px;
   &__email {
     width: 384px;
     height: 51px;
@@ -75,19 +133,9 @@
     padding: 0 20px;
     font-size: 20px;
   }
-  &__about {
-    width: 90%;
-    height: 170px;
-    background: #ffffff;
-    border: 1px solid #c6c6c6;
-    box-sizing: border-box;
-    border-radius: 20px;
-    outline: none;
-    margin-top: 13px;
-    margin-bottom: 54px !important;
-    padding: 22px 28px;
-    font-size: 20px;
-    resize: none;
+  &__label_right-text {
+    position: relative;
+    top: -9px;
   }
   &__teacher {
     width: 70%;
@@ -100,46 +148,6 @@
     padding: 0 7px;
     font-size: 20px;
   }
-  &__save {
-    width: 292px;
-    height: 50px;
-    border-radius: 30px;
-    background: #0075ff;
-    font-family: "Roboto Bold";
-    font-size: 18px;
-    border: none;
-    line-height: 21px;
-    align-items: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    outline: none;
-    margin-bottom: 86px;
-    margin-right: 80px;
-    cursor: pointer;
-  }
-}
-.form__label {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-  width: 240px;
-}
-.flex-row {
-  display: flex;
-  margin-top: 17px;
-}
-.field {
-  display: flex;
-  align-items: center;
-  margin-top: 17px;
-}
-.teacher {
-  position: relative;
-  top: -9px;
 }
 .about-lable {
   margin-top: 38px;
@@ -149,14 +157,10 @@
   position: relative;
   top: -9px;
 }
-.bottom {
+.form-down {
   display: flex;
   flex-direction: column;
   margin-top: 38px;
-}
-.right {
-  display: flex;
-  justify-content: flex-end;
 }
 .create-btn {
   margin-top: 60px;
@@ -208,7 +212,7 @@
       width: 100%;
       margin-right: 0px;
     }
-    &__top {
+    &__contacts {
       margin-left: 0;
     }
     img {
@@ -267,7 +271,7 @@
       font-size: 14px;
     }
     &__teacher {
-      width: 90%;
+      width: 100%;
     }
     &__title {
       font-size: 30px;
