@@ -198,8 +198,8 @@
   .flex-row {
     flex-direction: column;
   }
-  .student-form__email,
-  .student-form__phone,
+  .field__email,
+  .field__phone,
   .student-form__about {
     width: 100%;
   }
@@ -214,6 +214,7 @@
     }
     &__contacts {
       margin-left: 0;
+      width: 100%;
     }
     img {
       width: 300px;
@@ -221,13 +222,9 @@
       display: block;
       margin: 0 auto;
     }
-    &__teacher {
-      width: 100%;
-    }
   }
-  .form-row {
-    display: flex;
-    flex-direction: row;
+  .field__teacher {
+    width: 100%;
   }
   .create-btn {
     width: 100%;
@@ -240,8 +237,8 @@
   .student-form__teacher-label {
     font-size: 16px;
   }
-  .student-form__email,
-  .student-form__phone {
+  .field__email,
+  .field__phone {
     padding: 0px 15px;
     font-size: 16px;
   }
@@ -257,11 +254,12 @@
   .container {
     margin: 0 10px;
   }
+  .field__label,
   .student-form__label {
     font-size: 14px;
   }
-  .student-form__email,
-  .student-form__phone {
+  .field__email,
+  .field__phone {
     padding: 0px 15px;
     font-size: 14px;
   }
@@ -270,12 +268,12 @@
       padding: 18px 22px;
       font-size: 14px;
     }
-    &__teacher {
-      width: 100%;
-    }
     &__title {
       font-size: 30px;
     }
+  }
+  .field__teacher {
+    width: 100%;
   }
 }
 @media (max-width: 530px) {
@@ -284,7 +282,8 @@
       width: 220px;
       height: 220px;
     }
-    &__label {
+    &__label,
+    .field__label {
       font-size: 12px;
     }
   }
