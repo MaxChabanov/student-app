@@ -22,9 +22,9 @@
 <div class="container">
   <section class="description">
     <form class="student-form">
-      <div class="row">
+      <div class="flex-row">
         <img src="/assets/icons/add_photo.svg" alt="Добавить фото" />
-        <div class="student-form__top">
+        <div class="student-form__contacts">
           <h1 class="student-form__title">Имя Фамилия</h1>
           <button
             mat-raised-button
@@ -54,18 +54,15 @@
           >
             Send message success
           </button>
-          <div class="row form-row">
-            <label class="student-form__email-label" for="e-mail"
-              >e-mail:</label
-            >
-            <input class="student-form__email" type="email" name="e-mail" />
+
+          <div class="field">
+            <label class="field__label" for="e-mail">e-mail:</label>
+            <input class="field__email" type="email" name="e-mail" />
           </div>
-          <div class="row form-row">
-            <label class="student-form__phone-label" for="Phone"
-              >телефон:</label
-            >
+          <div class="field">
+            <label class="field__label" for="Phone">телефон:</label>
             <input
-              class="student-form__phone"
+              class="field__phone"
               type="tel"
               name="Phone"
               pattern="[0-9]{3,15}"
@@ -73,21 +70,21 @@
           </div>
         </div>
       </div>
-      <div class="student-form__bottom">
-        <label class="student-form__about-label" for="">О себе:</label>
+      <div class="form-down">
+        <label class="form__label" for="about-student">О себе:</label>
         <textarea
           class="student-form__about"
-          name="about student"
+          name="about-student"
           placeholder="Не более 200 символов"
         >
         </textarea>
-        <div class="row form-row">
-          <label class="student-form__teacher-label" for="teacher"
+        <div class="field">
+          <label class="field__label field__label_right-text" for="teacher"
             >Мой преподаватель:</label
           >
-          <input class="student-form__teacher" type="text" name="teacher" />
+          <input class="field__teacher" type="text" name="teacher" />
         </div>
-        <div class="right">
+        <div class="student-form__right-wrapper">
           <button class="student-form__save">сохранить</button>
         </div>
       </div>
@@ -95,7 +92,7 @@
   </section>
   <section class="calendar">
     <h1 class="classes">Мои занятия</h1>
-    <app-calendar></app-calendar>
-    <button class="create">создать сообщение</button>
+    <!-- <app-calendar></app-calendar> -->
+    <button class="create-btn">создать сообщение</button>
   </section>
 </div>
