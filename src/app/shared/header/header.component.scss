@@ -10,7 +10,6 @@
     font-family: "Roboto Bold";
     font-size: 16px;
     line-height: 19px;
-    display: block;
     align-self: center;
     text-transform: uppercase;
     color: #ffffff;
@@ -22,11 +21,6 @@
     top: 2.5%;
     img {
       cursor: pointer;
-    }
-    &-logout {
-      margin-left: 23px;
-    }
-    &-profile {
       margin-left: 20px;
     }
   }
