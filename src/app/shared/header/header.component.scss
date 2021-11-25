@@ -1,0 +1,23 @@
+.header {
+  height: 81px;
+  background: #272727;
+  display: flex;
+  &__title {
+    font-family: "Roboto Bold";
+    font-size: 16px;
+    line-height: 19px;
+    align-self: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: auto;
+  }
+  &__icons {
+    position: absolute;
+    right: 5.5%;
+    top: 2.5%;
+    img {
+      cursor: pointer;
+      margin-left: 20px;
+    }
+  }
+}
