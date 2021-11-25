@@ -25,6 +25,12 @@ const routes: Routes = [
       import('./tutor/tutor.module').then((m) => m.TutorModule),
     // canActivate: [StudentTutorGuard],
   },
+  {
+    path: 'dashboard',
+    loadChildren: () =>
+      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
+    // canActivate: [StudentTutorGuard],
+  },
 
   // { path: '**', component: NotFoundComponent },
 ];
