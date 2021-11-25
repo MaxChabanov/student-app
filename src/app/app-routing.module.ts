@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { PaymentComponent } from './payment/payment.component';
+import { PaymentComponent } from './dashboard/payment/payment.component';
 
 import { StudentTutorGuard } from './guards/student-tutor.guard';
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
