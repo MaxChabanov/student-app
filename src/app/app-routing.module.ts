@@ -13,16 +13,11 @@ const routes: Routes = [
   { path: 'auth', component: LoginComponent },
   { path: 'payment', component: PaymentComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
+
   {
-    path: 'student',
+    path: 'dashboard',
     loadChildren: () =>
-      import('./student/student.module').then((m) => m.StudentModule),
-    // canActivate: [StudentTutorGuard],
-  },
-  {
-    path: 'tutor',
-    loadChildren: () =>
-      import('./tutor/tutor.module').then((m) => m.TutorModule),
+      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
     // canActivate: [StudentTutorGuard],
   },
 
