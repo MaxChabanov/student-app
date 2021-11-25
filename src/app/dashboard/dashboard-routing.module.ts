@@ -5,8 +5,14 @@ import { StudentComponent } from './student/student.component';
 import { TutorComponent } from './tutor/tutor.component';
 
 const routes: Routes = [
-  { path: 'student', component: StudentComponent },
-  { path: 'tutor', component: TutorComponent },
+  {
+    path: '',
+    children: [
+      { path: 'student', component: StudentComponent },
+      { path: 'tutor', component: TutorComponent },
+    ],
+    component: DashboardComponent,
+  },
 ];
 
 @NgModule({
