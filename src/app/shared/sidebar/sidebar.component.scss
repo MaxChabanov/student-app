@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 113px;
   height: 1033px;
 
@@ -24,5 +25,60 @@
 .photo-container {
   width: 5rem;
   height: 5rem;
-  margin: 15px;
+}
+
+.icon {
+  width: 36px;
+  height: 100%;
+  transition: 500ms;
+}
+.icon:hover,
+.arrow:hover {
+  filter: brightness(0);
+  cursor: pointer;
+}
+
+.icon-container {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  justify-content: center;
+  display: flex;
+}
+
+.icons-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.logout-container {
+  width: 100%;
+  height: 59%;
+  background-color: #297abf;
+  padding: 1rem;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  cursor: pointer;
+}
+.logout-sideblock {
+  background-color: #4c92cd;
+  height: 76px;
+  width: 28px;
+  position: absolute;
+  top: 64.35%;
+  left: 80%;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 34.8%;
+  left: 86%;
+}
+.arrow {
+  transition: 500ms;
 }
