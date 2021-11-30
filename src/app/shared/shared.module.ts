@@ -10,9 +10,16 @@ import { TutorSlotComponent } from './tutor-slot/tutor-slot.component';
 import { MaterialModule } from '../material/material.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [CommonModule, MaterialModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule,
+  ],
   declarations: [
     AutocompleteComponent,
     CalendarComponent,
