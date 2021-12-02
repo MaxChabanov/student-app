@@ -7,8 +7,17 @@ import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { TutorComponent } from './tutor/tutor.component';
 
+import { PaymentTableComponent } from './payment/payment-table/payment-table.component';
+import { PaymentComponent } from './payment/payment.component';
+
 @NgModule({
-  declarations: [DashboardComponent, StudentComponent, TutorComponent],
+  declarations: [
+    DashboardComponent,
+    StudentComponent,
+    TutorComponent,
+    PaymentTableComponent,
+    PaymentComponent,
+  ],
   imports: [CommonModule, DashboardRoutingModule, SharedModule],
 })
 export class DashboardModule {}
