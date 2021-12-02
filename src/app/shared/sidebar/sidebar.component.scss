@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-width: 113px;
-  min-height: 97.5%;
+  width: 113px;
+  height: 97.5%;
 
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
@@ -48,7 +48,6 @@
 
 .icons {
   width: 100%;
-  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,4 +80,47 @@
 }
 .arrow {
   transition: 500ms;
+}
+
+.hamburger-menu-container,
+.notifications-container {
+  display: none;
+}
+.hamburger-menu-icon,
+.notifications-icon {
+  display: none;
+
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    background-color: #297abf;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    height: 81px;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-around;
+  }
+  .logout-sideblock,
+  .photo-container,
+  .icons,
+  .arrow-container {
+    display: none;
+  }
+  .logout-icon {
+    width: auto;
+  }
+  .logout-container {
+    width: 38px;
+    height: 38px;
+  }
+  .hamburger-menu-icon-container,
+  .notifications-container {
+    display: block;
+  }
 }
