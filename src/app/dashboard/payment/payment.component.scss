@@ -1,15 +1,12 @@
-.main {
+.transactions {
   background: #e5e5e5;
   display: flex;
   flex-direction: row;
 }
 .pay {
-  padding: 190px 0;
+  padding: 190px 63px;
   text-align: center;
   border-right: 1px solid #bdbdbd;
-  &__container {
-    margin: 0 173px;
-  }
   &__title {
     font-family: "Roboto Regular";
     font-size: 14px;
@@ -78,7 +75,7 @@
   }
 }
 .history {
-  padding: 133px 0;
+  padding: 133px 63px;
   &__title {
     font-family: "Roboto Bold";
     font-size: 18px;
@@ -93,9 +90,6 @@
     height: 783px;
     background: #ffffff;
     border-radius: 10px;
-  }
-  &__container {
-    margin: 0 60px;
   }
 }
 // .container {
