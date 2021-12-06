@@ -1,15 +1,12 @@
-.main {
+.transactions {
   background: #e5e5e5;
   display: flex;
   flex-direction: row;
 }
 .pay {
-  padding: 190px 0;
+  padding: 190px 63px;
   text-align: center;
   border-right: 1px solid #bdbdbd;
-  &__container {
-    margin: 0 173px;
-  }
   &__title {
     font-family: "Roboto Regular";
     font-size: 14px;
@@ -22,22 +19,64 @@
     margin-top: -9px;
   }
 }
-.balance {
-  width: 302px;
-  height: 176px;
+.refill {
+  padding: 39px;
   background: #ffffff;
   border-radius: 10px;
-  margin-bottom: 34px;
-}
-.sum {
-  width: 302px;
-  height: 248px;
-  background: #ffffff;
-  border-radius: 10px;
-  margin-bottom: 244px;
+  text-align: center;
+  margin-bottom: 247px;
+  &:first-child {
+    margin-bottom: 31px;
+  }
+  &__title {
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    line-height: 16px;
+    color: #bdbdbd;
+  }
+  &__sum {
+    font-family: "Roboto Bold";
+    font-size: 36px;
+    line-height: 42px;
+    color: #242524;
+  }
+  &__summary {
+    font-family: "Roboto Regular";
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #39a182;
+  }
+  &__input {
+    width: 224px;
+    height: 54px;
+    display: block;
+    padding: 0 22px;
+    background: #ffffff;
+    box-shadow: inset 2px 2px 6px rgba(77, 99, 176, 0.1);
+    border-radius: 5px;
+    margin-bottom: 59px;
+    outline: none;
+    border: 1px solid #bdbdbd;
+  }
+  &__btn {
+    width: 224px;
+    height: 54px;
+    background: #297abf;
+    border-radius: 5px;
+    font-family: "Roboto Bold";
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-transform: uppercase;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+  }
 }
 .history {
-  padding: 133px 0;
+  padding: 133px 63px;
   &__title {
     font-family: "Roboto Bold";
     font-size: 18px;
@@ -48,13 +87,10 @@
     margin-bottom: 36px;
   }
   &__table {
-    width: 618px;
+    width: 768px;
     height: 783px;
     background: #ffffff;
     border-radius: 10px;
-  }
-  &__container {
-    margin: 0 60px;
   }
 }
 

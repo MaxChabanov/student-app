@@ -1,22 +1,25 @@
-<div class="main">
+<section class="transactions">
   <div class="pay">
-    <div class="pay__container">
-      <div class="balance"></div>
-      <div class="sum"></div>
-      <h1 class="pay__title">Стоимость урока</h1>
-      <h2 class="pay__subtitle">0,00</h2>
+    <div class="refill">
+      <h1 class="refill__title">Общий баланс</h1>
+      <h2 class="refill__sum">1000,00</h2>
+      <h2 class="refill__summary">Достаточно для 5/8 уроков</h2>
     </div>
+    <div class="refill">
+      <input type="text" name="" class="refill__input" placeholder="Сумма" />
+      <button class="refill__btn">пополнить</button>
+    </div>
+    <h1 class="pay__title">Стоимость урока</h1>
+    <h2 class="pay__subtitle">0,00</h2>
   </div>
   <div class="history">
-    <div class="history__container">
-      <h1 class="history__title">история платежей</h1>
-      <div class="history__table">
-        <app-payment-table></app-payment-table>
-      </div>
+    <h1 class="history__title">история платежей</h1>
+    <div class="history__table">
+      <app-payment-table></app-payment-table>
     </div>
   </div>
-</div>
-
+</section>
+<!-- </div> -->
 <!-- OLD LAYOUT -->
 <!-- <section class="pay">
   <div class="container">
