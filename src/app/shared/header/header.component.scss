@@ -22,8 +22,7 @@
       transition: 500ms;
       margin-right: -8px;
     }
-  }
-  &__icons {
+
     .header__icons-bell:hover {
       fill: #a1ccff;
     }
@@ -35,6 +34,10 @@
   width: 28px;
   height: 28px;
   font-size: 14px;
+}
+
+.messages {
+  position: relative;
 }
 
 .message-title {
@@ -49,26 +52,17 @@
   align-items: center;
 }
 
-.message-box-show {
-  display: block;
-}
-.message-box-hide {
-  display: none;
-}
-
 .message-box {
   position: absolute;
-  top: 105%;
-  right: 5px;
-
+  top: 64px;
+  right: -110px;
   width: 347px;
   height: 175px;
-
   background: #ffffff;
   border: 1px solid #c6c6c6;
-  border-radius: 6%;
+  border-radius: 15px;
   box-sizing: border-box;
-  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 3px 6px rgb(0 0 0 / 25%);
 }
 
 .message-content {
@@ -76,6 +70,16 @@
   padding: 15px;
   font-size: 13px;
   line-height: 14px;
+  transition: 500ms;
+}
+
+.message-content:hover {
+  background-color: #a1ccff;
+}
+
+.last-message {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 hr {
@@ -88,8 +92,8 @@ hr {
   width: 0;
   height: 0;
   position: absolute;
-  left: 62%;
-  top: -11%;
+  left: 205px;
+  bottom: 170px;
   border: 20px solid transparent;
   border-top: 0;
   border-bottom: 20px solid white;
