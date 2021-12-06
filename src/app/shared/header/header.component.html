@@ -3,6 +3,7 @@
   <div class="header__icons">
     <mat-icon matBadge="15" matBadgeColor="warn" matBadgeSize="large">
       <svg
+        (click)="clickEvent()"
         class="header__icons-bell"
         width="35"
         height="42"
@@ -17,7 +18,10 @@
     </mat-icon>
   </div>
 
-  <div class="message-box">
+  <div
+    class="message-box"
+    [ngClass]="status ? 'message-box-show' : 'message-box-hide'"
+  >
     <div class="message-box-triangle"></div>
 
     <p class="message-title">Уведомления</p>

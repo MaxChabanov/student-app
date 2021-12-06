@@ -49,6 +49,13 @@
   align-items: center;
 }
 
+.message-box-show {
+  display: block;
+}
+.message-box-hide {
+  display: none;
+}
+
 .message-box {
   position: absolute;
   top: 105%;
