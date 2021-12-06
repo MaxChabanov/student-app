@@ -15,12 +15,77 @@
     margin: auto;
   }
   &__icons {
-    img {
+    margin-right: 10%;
+
+    svg {
       cursor: pointer;
-      margin-left: 20px;
-      margin-right: 20px;
+      transition: 500ms;
+      margin-right: -8px;
     }
   }
+  &__icons {
+    .header__icons-bell:hover {
+      fill: #a1ccff;
+    }
+  }
+}
+
+.mat-badge-content {
+  background-color: #e20000;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+}
+
+.message-title {
+  width: 156px;
+  height: 18px;
+  margin: 15px;
+
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.message-box {
+  position: absolute;
+  top: 105%;
+  right: 5px;
+
+  width: 347px;
+  height: 175px;
+
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  border-radius: 6%;
+  box-sizing: border-box;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.message-content {
+  display: flex;
+  padding: 15px;
+  font-size: 13px;
+  line-height: 14px;
+}
+
+hr {
+  background: #e5e5e5;
+  height: 0px;
+  border: 1px solid #e5e5e5;
+}
+
+.message-box-triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 62%;
+  top: -11%;
+  border: 20px solid transparent;
+  border-top: 0;
+  border-bottom: 20px solid white;
 }
 
 @media screen and (max-width: 600px) {
