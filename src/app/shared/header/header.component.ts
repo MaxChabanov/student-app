@@ -10,8 +10,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  status: boolean = false;
+  statusBell: boolean = false;
   clickEvent() {
-    this.status = !this.status;
+    this.statusBell = !this.statusBell;
   }
 }

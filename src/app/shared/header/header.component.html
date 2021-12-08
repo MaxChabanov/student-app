@@ -1,11 +1,11 @@
 <header class="header">
   <h1 class="header__title">профиль студента</h1>
   <div class="header__icons">
-    <div class="messages">
+    <div class="message">
       <mat-icon matBadge="15" matBadgeColor="warn" matBadgeSize="large">
         <svg
           (click)="clickEvent()"
-          class="header__icons-bell"
+          class="message__icon-bell"
           width="35"
           height="42"
           viewBox="0 0 35 42"
@@ -18,21 +18,21 @@
         </svg>
       </mat-icon>
 
-      <div class="message-box" *ngIf="status">
-        <div class="message-box-triangle"></div>
+      <div class="message__box" *ngIf="statusBell">
+        <div class="message__box-triangle"></div>
 
-        <p class="message-title">Уведомления</p>
+        <p class="message__title">Уведомления</p>
 
-        <div class="message-container">
-          <hr class="message-line" />
+        <div class="message__container">
+          <hr class="message__line" />
 
-          <div class="message-content">
+          <div class="message__content">
             <p>Фамилия Имя отправляет запрос на добавление в календарь</p>
           </div>
         </div>
-        <div class="message-container">
-          <hr class="message-line" />
-          <div class="message-content last-message">
+        <div class="message__container">
+          <hr class="message__line" />
+          <div class="message__content message__last">
             <p>Фамилия Имя отправляет Вам сообщение</p>
           </div>
         </div>
