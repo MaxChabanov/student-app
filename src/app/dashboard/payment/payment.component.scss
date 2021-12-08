@@ -9,17 +9,6 @@
   text-align: center;
   border-right: 1px solid #bdbdbd;
   box-sizing: border-box;
-  &__title {
-    font-family: "Roboto Regular";
-    font-size: 14px;
-    color: #297abf;
-  }
-  &__subtitle {
-    font-family: "Roboto Bold";
-    font-size: 36px;
-    color: #242524;
-    margin-top: -9px;
-  }
 }
 .refill {
   padding: 3vw;
@@ -61,7 +50,7 @@
     border-radius: 5px;
     margin-bottom: 59px;
     outline: none;
-    border: 1px solid #bdbdbd;
+    border: none;
   }
   &__btn {
     width: 85%;
@@ -101,22 +90,59 @@
     border-radius: 10px;
   }
 }
+.price {
+  &__line {
+    display: none;
+    width: 95%;
+    height: 1px;
+    background-color: #bdbdbd;
+    margin: 19px 0;
+  }
+  &__title {
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    color: #297abf;
+  }
+  &__subtitle {
+    font-family: "Roboto Bold";
+    font-size: 36px;
+    color: #242524;
+    margin-top: -9px;
+  }
+}
+
 @media (max-width: 768px) {
   .transactions {
     flex-direction: column;
   }
   .refill {
-    margin-bottom: 37px;
+    margin-bottom: 40px;
     width: 92%;
   }
   .history {
     padding-top: 0;
     width: 100%;
+    padding-bottom: 91px;
+    &__title {
+      margin-bottom: 18px;
+      text-align: center;
+    }
   }
   .pay {
+    padding: 131px 5%;
     width: 100%;
     border: none;
-    padding-bottom: 60px;
+    padding-bottom: 25px;
+  }
+  .price {
+    padding: 19px 20px 9px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+    &__subtitle {
+      margin-top: 0;
+    }
   }
 }
 // .container {
