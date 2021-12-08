@@ -1,14 +1,15 @@
 //Install express server
 const express = require("express");
-const path = require("path");
+const bodyParser = require('body-parser');
+const authRoute = require('./routes/auth');
 
 const app = express();
 
-// Serve only the static files form the dist directory
-app.use(express.static(__dirname + "/dist/student-app"));
+app.use(require('morgan')('dev'));
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+app.use(require('cors')())
 
-app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname + "/dist/student-app/index.html"));
-});
+app.use('/api/auth', authRoute)
 
 module.exports = app;
