@@ -4,7 +4,7 @@ import { DashboardComponent } from './dashboard.component';
 import { StudentComponent } from './student/student.component';
 import { TutorComponent } from './tutor/tutor.component';
 import { PaymentComponent } from './payment/payment.component';
-import { ErrorComponent } from './error/error.component';
+import { InProgressComponent } from './in-progress/in-progress.component';
 
 const routes: Routes = [
   {
@@ -13,7 +13,7 @@ const routes: Routes = [
       { path: 'student', component: StudentComponent },
       { path: 'tutor', component: TutorComponent },
       { path: 'payment', component: PaymentComponent },
-      { path: 'error', component: ErrorComponent },
+      { path: 'in-progress', component: InProgressComponent },
     ],
     component: DashboardComponent,
   },

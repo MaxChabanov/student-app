@@ -9,7 +9,7 @@ import { TutorComponent } from './tutor/tutor.component';
 
 import { PaymentTableComponent } from './payment/payment-table/payment-table.component';
 import { PaymentComponent } from './payment/payment.component';
-import { ErrorComponent } from './error/error.component';
+import { InProgressComponent } from './in-progress/in-progress.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { ErrorComponent } from './error/error.component';
     TutorComponent,
     PaymentTableComponent,
     PaymentComponent,
-    ErrorComponent,
+    InProgressComponent,
   ],
   imports: [CommonModule, DashboardRoutingModule, SharedModule],
 })
