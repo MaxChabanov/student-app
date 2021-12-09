@@ -9,6 +9,7 @@ import { TutorComponent } from './tutor/tutor.component';
 
 import { PaymentTableComponent } from './payment/payment-table/payment-table.component';
 import { PaymentComponent } from './payment/payment.component';
+import { InProgressComponent } from './in-progress/in-progress.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PaymentComponent } from './payment/payment.component';
     TutorComponent,
     PaymentTableComponent,
     PaymentComponent,
+    InProgressComponent,
   ],
   imports: [CommonModule, DashboardRoutingModule, SharedModule],
 })
