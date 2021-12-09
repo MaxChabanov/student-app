@@ -15,16 +15,110 @@
     margin: auto;
   }
   &__icons {
-    img {
+    margin-right: 10%;
+
+    svg {
       cursor: pointer;
-      margin-left: 20px;
-      margin-right: 20px;
+      transition: 500ms;
+      margin-right: -8px;
     }
   }
+}
+
+.mat-badge-content {
+  background-color: #e20000;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+}
+
+.message {
+  position: relative;
+
+  &__icon-bell:hover {
+    fill: #a1ccff;
+  }
+  &__title {
+    width: 156px;
+    height: 18px;
+    margin: 15px;
+
+    font-weight: 500;
+    line-height: 14px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  &__box {
+    position: absolute;
+    top: 64px;
+    right: -110px;
+    width: 347px;
+    height: 175px;
+    background: #ffffff;
+    border: 1px solid #c6c6c6;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 6px rgb(0 0 0 / 25%);
+  }
+
+  &__content {
+    display: flex;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 14px;
+    transition: 500ms;
+    cursor: pointer;
+  }
+  &__content:hover {
+    background-color: #a1ccff;
+  }
+  &_last {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  &__box-triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 206px;
+    bottom: 170px;
+    border: 20px solid transparent;
+    border-top: 0;
+    border-bottom: 20px solid white;
+  }
+}
+
+hr {
+  background: #e5e5e5;
+  height: 0px;
+  border: 1px solid #e5e5e5;
 }
 
 @media screen and (max-width: 600px) {
   .header__icons {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1121px) {
+  .message {
+    &__box {
+      right: -75px;
+    }
+    &__box-triangle {
+      left: 242px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .message {
+    &__box {
+      right: -65px;
+    }
+    &__box-triangle {
+      left: 252px;
+    }
   }
 }
