@@ -73,7 +73,7 @@
   &__content:hover {
     background-color: #a1ccff;
   }
-  &__last {
+  &_last {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
   }
@@ -98,5 +98,27 @@ hr {
 @media screen and (max-width: 600px) {
   .header__icons {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1121px) {
+  .message {
+    &__box {
+      right: -75px;
+    }
+    &__box-triangle {
+      left: 242px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .message {
+    &__box {
+      right: -65px;
+    }
+    &__box-triangle {
+      left: 252px;
+    }
   }
 }
