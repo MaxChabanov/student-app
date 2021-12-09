@@ -7,7 +7,7 @@ module.exports.main = async function main() {
 
   try {
     await client.connect();
-    await listDatabases(client);
+    return await listDatabases(client);
   } catch (e) {
     console.error(e);
   } finally {
@@ -18,6 +18,7 @@ module.exports.main = async function main() {
 async function listDatabases(client){
   const databasesList = await client.db().admin().listDatabases();
 
-  console.log("Databases:");
-  databasesList.databases.forEach(db => console.log(` - ${db.name}`));
-};
+  // console.log("Databases:");
+  // databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+  return databasesList.databases.map(item => item.name);
+}
