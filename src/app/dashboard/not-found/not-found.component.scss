@@ -1,0 +1,21 @@
+.wrapper {
+  margin: 0 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.error__title,
+.error__subtitle {
+  font-family: "Roboto Bold";
+  color: #297abf;
+}
+.error__title {
+  font-size: 4em;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+.error__subtitle {
+  font-size: 3em;
+  margin-bottom: 25px;
+}
