@@ -6,8 +6,6 @@
   flex-direction: row;
   &__title {
     font-family: "Roboto Bold";
-    font-size: 16px;
-    line-height: 19px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -17,7 +15,6 @@
   &__icons {
     position: absolute;
     right: 80px;
-    line-height: 7em;
     top: 7px;
     &-logout {
       margin-left: 23px;
@@ -49,8 +46,8 @@
   }
   &__title {
     font-family: "Roboto Bold";
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 2.5em;
+    line-height: 3em;
     display: flex;
     align-items: center;
     color: #272727;
@@ -67,12 +64,9 @@
     outline: none;
     margin-left: 58px;
     padding: 0 20px;
-    font-size: 20px;
     &-label {
       font-family: "Roboto";
       font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
       display: flex;
       align-items: center;
       color: #000000;
@@ -88,12 +82,9 @@
     outline: none;
     margin-left: 37px;
     padding: 0 20px;
-    font-size: 20px;
     &-label {
       font-family: "Roboto";
       font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
       display: flex;
       align-items: center;
       color: #000000;
@@ -110,13 +101,10 @@
     margin-top: 13px;
     margin-bottom: 54px !important;
     padding: 22px 28px;
-    font-size: 20px;
     resize: none;
     &-label {
       font-family: "Roboto";
       font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
       display: flex;
       align-items: center;
       color: #000000;
@@ -132,12 +120,9 @@
     outline: none;
     margin: -5px 0 28px 7px;
     padding: 0 7px;
-    font-size: 20px;
     &-label {
       font-family: "Roboto";
       font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
       align-items: center;
       color: #000000;
     }
@@ -148,9 +133,7 @@
     border-radius: 30px;
     background: #0075ff;
     font-family: "Roboto Bold";
-    font-size: 18px;
     border: none;
-    line-height: 21px;
     align-items: center;
     text-transform: uppercase;
     color: #ffffff;
@@ -176,9 +159,7 @@
   border-radius: 30px;
   background: #0075ff;
   font-family: "Roboto Bold";
-  font-size: 18px;
   border: none;
-  line-height: 21px;
   align-items: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -189,8 +170,8 @@
 }
 .classes {
   font-family: "Roboto Bold";
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 2.5em;
+  line-height: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,8 +188,6 @@
   padding-top: 19px;
   &__title {
     font-family: "Roboto Bold";
-    font-size: 14px;
-    line-height: 16px;
     display: flex;
     align-items: center;
     color: #000000;
@@ -217,8 +196,6 @@
   }
   &__label {
     font-family: "Roboto";
-    font-size: 12px;
-    line-height: 14px;
     color: #000000;
     display: block;
     cursor: pointer;
@@ -271,8 +248,8 @@
 }
 .stud__title {
   font-family: "Roboto Bold";
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 2.5em;
+  line-height: 3em;
   display: flex;
   align-items: center;
   color: #272727;
