@@ -8,34 +8,27 @@
   width: 32%;
   text-align: center;
   border-right: 1px solid #bdbdbd;
-  box-sizing: border-box;
 }
 .refill {
   padding: 3vw;
   background: #ffffff;
   border-radius: 10px;
   text-align: center;
-  margin-bottom: 204px;
+  margin-bottom: 150px;
   width: 75%;
   &:first-child {
     margin-bottom: 31px;
   }
   &__title {
-    font-family: "Roboto Regular";
-    font-size: 14px;
-    line-height: 16px;
     color: #bdbdbd;
   }
   &__sum {
     font-family: "Roboto Bold";
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 2.5em;
+    line-height: 1.6em;
     color: #242524;
   }
   &__summary {
-    font-family: "Roboto Regular";
-    font-size: 18px;
-    line-height: 21px;
     text-align: center;
     color: #39a182;
   }
@@ -60,8 +53,6 @@
     background: #297abf;
     border-radius: 5px;
     font-family: "Roboto Bold";
-    font-size: 14px;
-    line-height: 16px;
     align-items: center;
     text-transform: uppercase;
     border: none;
@@ -73,11 +64,10 @@
 .history {
   padding: 133px 5%;
   width: 68%;
-  box-sizing: border-box;
   &__title {
     font-family: "Roboto Bold";
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.28em;
+    line-height: 1.1em;
     align-items: center;
     text-transform: uppercase;
     color: #242524;
@@ -93,12 +83,11 @@
 .price {
   &__title {
     font-family: "Roboto Bold";
-    font-size: 14px;
     color: #297abf;
   }
   &__subtitle {
     font-family: "Roboto Bold";
-    font-size: 36px;
+    font-size: 2.5em;
     color: #242524;
     margin-top: -9px;
   }

@@ -7,8 +7,6 @@
   padding-top: 19px;
   &__title {
     font-family: "Roboto Bold";
-    font-size: 14px;
-    line-height: 16px;
     display: flex;
     align-items: center;
     color: #000000;
@@ -16,9 +14,6 @@
     margin-top: 0;
   }
   &__label {
-    font-family: "Roboto";
-    font-size: 14px;
-    line-height: 16px;
     color: #000000;
     display: block;
     cursor: pointer;
@@ -32,7 +27,6 @@
     box-sizing: border-box;
     border-radius: 10px;
     margin: 24px 34px 31px 33px;
-    font-size: 14px;
     resize: none;
     padding: 11px 12px;
   }
@@ -49,8 +43,6 @@
   background: #0075ff;
   border-radius: 30px;
   font-family: "Roboto Bold";
-  font-size: 12px;
-  line-height: 14px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -66,13 +58,11 @@
   width: initial;
   display: none;
   cursor: pointer;
-  // margin: 0 12px 0 389px;
 }
 .open-slot__label span {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  // padding: 0 0 0 43px;
   margin-left: 21px;
 }
 .open-slot__label span::before {

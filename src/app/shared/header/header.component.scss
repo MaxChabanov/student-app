@@ -7,8 +7,6 @@
   align-items: center;
   &__title {
     font-family: "Roboto Bold";
-    font-size: 16px;
-    line-height: 19px;
     align-self: center;
     text-transform: uppercase;
     color: #ffffff;
@@ -29,7 +27,7 @@
   background-color: #e20000;
   width: 28px;
   height: 28px;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .message {
@@ -44,7 +42,6 @@
     margin: 15px;
 
     font-weight: 500;
-    line-height: 14px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -65,8 +62,6 @@
   &__content {
     display: flex;
     padding: 15px;
-    font-size: 13px;
-    line-height: 14px;
     transition: 500ms;
     cursor: pointer;
   }

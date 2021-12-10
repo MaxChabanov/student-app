@@ -129,8 +129,6 @@ td {
 }
 .name-surname {
   font-family: "Roboto Medium";
-  font-size: 12px;
-  line-height: 14px;
   display: flex;
   align-items: center;
   color: rgba(0, 0, 0, 1);
@@ -138,12 +136,11 @@ td {
 }
 .date {
   font-family: "Roboto Bold";
-  font-size: 27px;
+  font-size: 2em;
   margin-left: 10px;
 }
 .dayw {
   font-family: "Roboto Medium";
-  font-size: 12px;
   color: #a4a4a4;
   margin-bottom: 3px;
   margin-left: 9px;
